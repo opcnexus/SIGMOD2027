@@ -1,0 +1,20 @@
+{
+  "model": "digat_v3",
+  "tag": "mp_only",
+  "use_thread": false,
+  "multi_parent_head": true,
+  "tau_link": 0.65,
+  "best_dev_F1": 47.9,
+  "test": {
+    "P": 46.5,
+    "R": 47.5,
+    "F1": 47.0,
+    "gold": 15892,
+    "auto": 16236,
+    "matched": 7555
+  },
+  "epochs_run": 46,
+  "train_seconds": 1232,
+  "completed_at": "2026-09-25 17:42",
+  "protocol": "80/20 pooled split seed=42 (NOT comparable to official)"
+}

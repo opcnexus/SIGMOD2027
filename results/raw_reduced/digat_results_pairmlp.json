@@ -1,0 +1,14 @@
+{
+  "model": "pairmlp",
+  "bert": false,
+  "best_dev_F1": 33.6,
+  "test": {
+    "P": 36.0,
+    "R": 34.9,
+    "F1": 35.4,
+    "gold": 15892,
+    "auto": 15431,
+    "matched": 5551
+  },
+  "epochs_run": 11
+}

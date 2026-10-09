@@ -1,0 +1,424 @@
+{
+  "completed_at": "2026-09-25 16:43",
+  "window": 100,
+  "splits": {
+    "train": {
+      "n_files": 153,
+      "n_messages": 220463,
+      "n_annotated_queries": 67463,
+      "root": {
+        "count": 16716,
+        "pct_of_annotated": 24.78
+      },
+      "single_parent": {
+        "count": 49032,
+        "pct_of_annotated": 72.68
+      },
+      "multi_parent": {
+        "count": 1715,
+        "pct_of_annotated": 2.54,
+        "pct_of_nonroot": 3.38
+      },
+      "parent_out_of_window_msgs": {
+        "count": 475,
+        "pct_of_annotated": 0.7
+      },
+      "single_parent_distance": {
+        "mean": 8.78,
+        "p50": 3.0,
+        "p90": 15.0,
+        "p99": 95.0
+      },
+      "multi_parent_distance": {
+        "mean": 8.14,
+        "p50": 4.0
+      },
+      "multi_parent_examples": [
+        {
+          "file": "2004-12-25.train-c",
+          "msg_i": 1040,
+          "parents": [
+            1036,
+            1038,
+            1039
+          ],
+          "distances": [
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "file": "2004-12-25.train-c",
+          "msg_i": 1148,
+          "parents": [
+            1144,
+            1147
+          ],
+          "distances": [
+            4,
+            1
+          ]
+        },
+        {
+          "file": "2004-12-25.train-c",
+          "msg_i": 1170,
+          "parents": [
+            1165,
+            1166,
+            1167
+          ],
+          "distances": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "file": "2004-12-25.train-c",
+          "msg_i": 1241,
+          "parents": [
+            1224,
+            1235
+          ],
+          "distances": [
+            17,
+            6
+          ]
+        },
+        {
+          "file": "2005-02-06.train-c",
+          "msg_i": 1001,
+          "parents": [
+            998,
+            1000
+          ],
+          "distances": [
+            3,
+            1
+          ]
+        },
+        {
+          "file": "2005-02-06.train-c",
+          "msg_i": 1007,
+          "parents": [
+            1003,
+            1004
+          ],
+          "distances": [
+            4,
+            3
+          ]
+        },
+        {
+          "file": "2005-02-06.train-c",
+          "msg_i": 1052,
+          "parents": [
+            1045,
+            1049
+          ],
+          "distances": [
+            7,
+            3
+          ]
+        },
+        {
+          "file": "2005-02-06.train-c",
+          "msg_i": 1055,
+          "parents": [
+            1045,
+            1052
+          ],
+          "distances": [
+            10,
+            3
+          ]
+        }
+      ],
+      "single_parent_distance_hist": {
+        "1": 11606,
+        "2-3": 14044,
+        "4-10": 15831,
+        "11-50": 6587,
+        "51-100": 502,
+        ">100": 462
+      }
+    },
+    "dev": {
+      "n_files": 10,
+      "n_messages": 12500,
+      "n_annotated_queries": 2500,
+      "root": {
+        "count": 462,
+        "pct_of_annotated": 18.48
+      },
+      "single_parent": {
+        "count": 1933,
+        "pct_of_annotated": 77.32
+      },
+      "multi_parent": {
+        "count": 105,
+        "pct_of_annotated": 4.2,
+        "pct_of_nonroot": 5.15
+      },
+      "parent_out_of_window_msgs": {
+        "count": 26,
+        "pct_of_annotated": 1.04
+      },
+      "single_parent_distance": {
+        "mean": 8.59,
+        "p50": 3.0,
+        "p90": 12.0,
+        "p99": 119.0
+      },
+      "multi_parent_distance": {
+        "mean": 4.72,
+        "p50": 3.0
+      },
+      "multi_parent_examples": [
+        {
+          "file": "2004-11-15_03",
+          "msg_i": 1074,
+          "parents": [
+            1070,
+            1072
+          ],
+          "distances": [
+            4,
+            2
+          ]
+        },
+        {
+          "file": "2004-11-15_03",
+          "msg_i": 1094,
+          "parents": [
+            1092,
+            1093
+          ],
+          "distances": [
+            2,
+            1
+          ]
+        },
+        {
+          "file": "2004-11-15_03",
+          "msg_i": 1148,
+          "parents": [
+            1144,
+            1146
+          ],
+          "distances": [
+            4,
+            2
+          ]
+        },
+        {
+          "file": "2004-11-15_03",
+          "msg_i": 1150,
+          "parents": [
+            1144,
+            1146
+          ],
+          "distances": [
+            6,
+            4
+          ]
+        },
+        {
+          "file": "2005-06-27_12",
+          "msg_i": 1014,
+          "parents": [
+            1008,
+            1010
+          ],
+          "distances": [
+            6,
+            4
+          ]
+        },
+        {
+          "file": "2005-06-27_12",
+          "msg_i": 1020,
+          "parents": [
+            1008,
+            1010
+          ],
+          "distances": [
+            12,
+            10
+          ]
+        },
+        {
+          "file": "2005-06-27_12",
+          "msg_i": 1059,
+          "parents": [
+            1043,
+            1057
+          ],
+          "distances": [
+            16,
+            2
+          ]
+        },
+        {
+          "file": "2005-06-27_12",
+          "msg_i": 1072,
+          "parents": [
+            1055,
+            1064
+          ],
+          "distances": [
+            17,
+            8
+          ]
+        }
+      ],
+      "single_parent_distance_hist": {
+        "1": 511,
+        "2-3": 621,
+        "4-10": 564,
+        "11-50": 196,
+        "51-100": 15,
+        ">100": 26
+      }
+    },
+    "test": {
+      "n_files": 10,
+      "n_messages": 15000,
+      "n_annotated_queries": 5000,
+      "root": {
+        "count": 922,
+        "pct_of_annotated": 18.44
+      },
+      "single_parent": {
+        "count": 3895,
+        "pct_of_annotated": 77.9
+      },
+      "multi_parent": {
+        "count": 183,
+        "pct_of_annotated": 3.66,
+        "pct_of_nonroot": 4.49
+      },
+      "parent_out_of_window_msgs": {
+        "count": 26,
+        "pct_of_annotated": 0.52
+      },
+      "single_parent_distance": {
+        "mean": 7.73,
+        "p50": 3.0,
+        "p90": 12.0,
+        "p99": 84.0
+      },
+      "multi_parent_distance": {
+        "mean": 3.87,
+        "p50": 3.0
+      },
+      "multi_parent_examples": [
+        {
+          "file": "2005-07-06_14",
+          "msg_i": 1000,
+          "parents": [
+            993,
+            995
+          ],
+          "distances": [
+            7,
+            5
+          ]
+        },
+        {
+          "file": "2005-07-06_14",
+          "msg_i": 1048,
+          "parents": [
+            1045,
+            1046
+          ],
+          "distances": [
+            3,
+            2
+          ]
+        },
+        {
+          "file": "2005-07-06_14",
+          "msg_i": 1049,
+          "parents": [
+            1045,
+            1046
+          ],
+          "distances": [
+            4,
+            3
+          ]
+        },
+        {
+          "file": "2005-07-06_14",
+          "msg_i": 1312,
+          "parents": [
+            1308,
+            1311
+          ],
+          "distances": [
+            4,
+            1
+          ]
+        },
+        {
+          "file": "2005-07-06_14",
+          "msg_i": 1372,
+          "parents": [
+            1367,
+            1370
+          ],
+          "distances": [
+            5,
+            2
+          ]
+        },
+        {
+          "file": "2005-07-06_14",
+          "msg_i": 1449,
+          "parents": [
+            1438,
+            1443
+          ],
+          "distances": [
+            11,
+            6
+          ]
+        },
+        {
+          "file": "2007-01-11_12",
+          "msg_i": 1022,
+          "parents": [
+            1013,
+            1021
+          ],
+          "distances": [
+            9,
+            1
+          ]
+        },
+        {
+          "file": "2007-01-11_12",
+          "msg_i": 1025,
+          "parents": [
+            1021,
+            1024
+          ],
+          "distances": [
+            4,
+            1
+          ]
+        }
+      ],
+      "single_parent_distance_hist": {
+        "1": 1202,
+        "2-3": 1227,
+        "4-10": 1013,
+        "11-50": 382,
+        "51-100": 45,
+        ">100": 26
+      }
+    }
+  }
+}

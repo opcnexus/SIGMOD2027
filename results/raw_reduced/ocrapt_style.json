@@ -1,0 +1,52 @@
+{
+ "completed_at": "2026-09-27 15:14",
+ "method": "OCR-APT-style: PairMLP behavior scoring + bidirectional causal pruning + stage-wise validation (LLM stage pending)",
+ "thresholds": {
+  "tau_hi": 0.7,
+  "tau_lo": 0.45
+ },
+ "datasets": {
+  "irc": {
+   "path_F1": 3.44,
+   "path_P": 4.77,
+   "path_R": 2.69,
+   "component_recall": 8.58,
+   "ancestor_jaccard": 5.88
+  },
+  "molweni": {
+   "path_F1": 47.77,
+   "path_P": 53.53,
+   "path_R": 43.13,
+   "component_recall": 81.82,
+   "ancestor_jaccard": 79.95
+  },
+  "discord": {
+   "path_F1": 6.38,
+   "path_P": 6.63,
+   "path_R": 6.14,
+   "component_recall": 6.23,
+   "ancestor_jaccard": 16.47
+  },
+  "slack": {
+   "path_F1": 0.0,
+   "path_P": 0.0,
+   "path_R": 0.0,
+   "component_recall": 0.0,
+   "ancestor_jaccard": 1.87
+  },
+  "hn": {
+   "path_F1": 0.0,
+   "path_P": 0.0,
+   "path_R": 0.0,
+   "component_recall": 0.0,
+   "ancestor_jaccard": 1.73
+  },
+  "reddit": {
+   "path_F1": 0.0,
+   "path_P": 0.0,
+   "path_R": 0.0,
+   "component_recall": 0.0,
+   "ancestor_jaccard": 3.95
+  }
+ }
+}

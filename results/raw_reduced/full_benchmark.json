@@ -1,0 +1,1325 @@
+{
+ "completed_at": "2026-09-26 11:42",
+ "device": "mps",
+ "config": {
+  "W": 100,
+  "max_msgs": 1200,
+  "epochs": 12,
+  "patience": 3,
+  "seed": 42,
+  "protocol": "window-W candidates; edges outside window not counted; conv truncated to last 1200 msgs"
+ },
+ "algorithms": [
+  "prev1",
+  "saprev",
+  "simmax",
+  "PairMLP",
+  "MHA-Net"
+ ],
+ "metrics_desc": {
+  "link": "edge-level micro P/R/F1 (window)",
+  "root": "no-parent message detection",
+  "cats": "edge category F1 by gold structure: 1-1/many-1/1-many/many-many",
+  "unidentified_pct": "gold edges missed",
+  "hallucination_pct": "predicted edges wrong",
+  "multi_parent_recall": "recall on edges of multi-parent children",
+  "fragmentation": "mean #pred components per gold thread (simplified Kummerfeld)",
+  "affinity": "mean best pred-component overlap per gold thread",
+  "density_gold/pred": "mean parents per scored message",
+  "coverage_pct": "% messages with multi-label prediction (non-fallback)"
+ },
+ "datasets": {
+  "irc": {
+   "train": {
+    "convs": 117,
+    "msgs": 44785,
+    "gold_edges": 39953
+   },
+   "dev": {
+    "convs": 21,
+    "msgs": 8341,
+    "gold_edges": 7403
+   },
+   "test": {
+    "convs": 35,
+    "msgs": 13017,
+    "gold_edges": 11553
+   }
+  },
+  "molweni": {
+   "train": {
+    "convs": 800,
+    "msgs": 7113,
+    "gold_edges": 6314
+   },
+   "dev": {
+    "convs": 100,
+    "msgs": 860,
+    "gold_edges": 759
+   },
+   "test": {
+    "convs": 200,
+    "msgs": 1786,
+    "gold_edges": 1581
+   }
+  },
+  "discord": {
+   "train": {
+    "convs": 358,
+    "msgs": 12732,
+    "gold_edges": 12732
+   },
+   "dev": {
+    "convs": 76,
+    "msgs": 2245,
+    "gold_edges": 2245
+   },
+   "test": {
+    "convs": 78,
+    "msgs": 2733,
+    "gold_edges": 2733
+   }
+  },
+  "slack": {
+   "train": {
+    "convs": 105,
+    "msgs": 123305,
+    "gold_edges": 13883
+   },
+   "dev": {
+    "convs": 22,
+    "msgs": 23559,
+    "gold_edges": 2696
+   },
+   "test": {
+    "convs": 23,
+    "msgs": 27600,
+    "gold_edges": 3191
+   }
+  },
+  "hn": {
+   "train": {
+    "convs": 70,
+    "msgs": 61802,
+    "gold_edges": 45196
+   },
+   "dev": {
+    "convs": 15,
+    "msgs": 14160,
+    "gold_edges": 10558
+   },
+   "test": {
+    "convs": 15,
+    "msgs": 11711,
+    "gold_edges": 8351
+   }
+  },
+  "reddit": {
+   "train": {
+    "convs": 46,
+    "msgs": 8884,
+    "gold_edges": 6216
+   },
+   "dev": {
+    "convs": 10,
+    "msgs": 2034,
+    "gold_edges": 1381
+   },
+   "test": {
+    "convs": 11,
+    "msgs": 2616,
+    "gold_edges": 1597
+   }
+  }
+ },
+ "results": {
+  "irc": {
+   "prev1": {
+    "link": {
+     "P": 21.8,
+     "R": 25.0,
+     "F1": 23.3
+    },
+    "root": {
+     "P": 1.6,
+     "R": 100.0,
+     "F1": 3.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 14.7,
+      "R": 30.2,
+      "F1": 19.8
+     },
+     "1-many": {
+      "P": 100.0,
+      "R": 19.1,
+      "F1": 32.1
+     },
+     "many-1": {
+      "P": 100.0,
+      "R": 42.4,
+      "F1": 59.6
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 8.0,
+      "F1": 14.8
+     }
+    },
+    "unidentified_pct": 75.0,
+    "hallucination_pct": 78.2,
+    "multi_parent_recall": 22.4,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.869,
+    "density_pred": 0.997,
+    "coverage_pct": 99.7,
+    "n_scored_msgs": 13017,
+    "tp": 2834,
+    "fp": 10148,
+    "fn": 8480
+   },
+   "saprev": {
+    "link": {
+     "P": 22.1,
+     "R": 25.3,
+     "F1": 23.6
+    },
+    "root": {
+     "P": 1.6,
+     "R": 100.0,
+     "F1": 3.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 20.1,
+      "R": 32.0,
+      "F1": 24.7
+     },
+     "1-many": {
+      "P": 24.8,
+      "R": 19.2,
+      "F1": 21.6
+     },
+     "many-1": {
+      "P": 100.0,
+      "R": 23.5,
+      "F1": 38.1
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 6.4,
+      "F1": 12.0
+     }
+    },
+    "unidentified_pct": 74.7,
+    "hallucination_pct": 77.9,
+    "multi_parent_recall": 13.5,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.869,
+    "density_pred": 0.997,
+    "coverage_pct": 99.7,
+    "n_scored_msgs": 13017,
+    "tp": 2867,
+    "fp": 10115,
+    "fn": 8447
+   },
+   "simmax": {
+    "link": {
+     "P": 5.3,
+     "R": 6.1,
+     "F1": 5.7
+    },
+    "root": {
+     "P": 1.6,
+     "R": 100.0,
+     "F1": 3.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 8.8,
+      "R": 6.0,
+      "F1": 7.1
+     },
+     "1-many": {
+      "P": 3.4,
+      "R": 6.5,
+      "F1": 4.5
+     },
+     "many-1": {
+      "P": 100.0,
+      "R": 4.6,
+      "F1": 8.8
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 3.7,
+      "F1": 7.1
+     }
+    },
+    "unidentified_pct": 93.9,
+    "hallucination_pct": 94.7,
+    "multi_parent_recall": 4.1,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.869,
+    "density_pred": 0.997,
+    "coverage_pct": 99.7,
+    "n_scored_msgs": 13017,
+    "tp": 687,
+    "fp": 12295,
+    "fn": 10627
+   },
+   "PairMLP": {
+    "link": {
+     "P": 24.1,
+     "R": 27.6,
+     "F1": 25.7
+    },
+    "root": {
+     "P": 1.6,
+     "R": 100.0,
+     "F1": 3.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 28.5,
+      "R": 32.7,
+      "F1": 30.5
+     },
+     "1-many": {
+      "P": 17.1,
+      "R": 22.5,
+      "F1": 19.4
+     },
+     "many-1": {
+      "P": 100.0,
+      "R": 32.1,
+      "F1": 48.6
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 13.3,
+      "F1": 23.6
+     }
+    },
+    "unidentified_pct": 72.4,
+    "hallucination_pct": 75.9,
+    "multi_parent_recall": 21.2,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.869,
+    "density_pred": 0.997,
+    "coverage_pct": 99.7,
+    "n_scored_msgs": 13017,
+    "tp": 3127,
+    "fp": 9855,
+    "fn": 8187
+   },
+   "MHA-Net": {
+    "link": {
+     "P": 23.6,
+     "R": 27.1,
+     "F1": 25.2
+    },
+    "root": {
+     "P": 1.6,
+     "R": 100.0,
+     "F1": 3.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 27.4,
+      "R": 32.0,
+      "F1": 29.5
+     },
+     "1-many": {
+      "P": 17.3,
+      "R": 22.3,
+      "F1": 19.4
+     },
+     "many-1": {
+      "P": 100.0,
+      "R": 34.7,
+      "F1": 51.5
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 9.2,
+      "F1": 16.9
+     }
+    },
+    "unidentified_pct": 72.9,
+    "hallucination_pct": 76.4,
+    "multi_parent_recall": 19.9,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.869,
+    "density_pred": 0.997,
+    "coverage_pct": 99.7,
+    "n_scored_msgs": 13017,
+    "tp": 3066,
+    "fp": 9916,
+    "fn": 8248
+   }
+  },
+  "molweni": {
+   "prev1": {
+    "link": {
+     "P": 63.3,
+     "R": 63.5,
+     "F1": 63.4
+    },
+    "root": {
+     "P": 97.6,
+     "R": 100.0,
+     "F1": 98.8
+    },
+    "cats": {
+     "1-1": {
+      "P": 54.9,
+      "R": 91.8,
+      "F1": 68.7
+     },
+     "1-many": {
+      "P": 100.0,
+      "R": 36.5,
+      "F1": 53.5
+     }
+    },
+    "unidentified_pct": 36.5,
+    "hallucination_pct": 36.7,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.885,
+    "density_pred": 0.888,
+    "coverage_pct": 88.8,
+    "n_scored_msgs": 1786,
+    "tp": 1004,
+    "fp": 582,
+    "fn": 577
+   },
+   "saprev": {
+    "link": {
+     "P": 24.3,
+     "R": 24.4,
+     "F1": 24.3
+    },
+    "root": {
+     "P": 97.6,
+     "R": 100.0,
+     "F1": 98.8
+    },
+    "cats": {
+     "1-1": {
+      "P": 22.7,
+      "R": 32.6,
+      "F1": 26.7
+     },
+     "1-many": {
+      "P": 28.0,
+      "R": 16.5,
+      "F1": 20.8
+     }
+    },
+    "unidentified_pct": 75.6,
+    "hallucination_pct": 75.7,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.885,
+    "density_pred": 0.888,
+    "coverage_pct": 88.8,
+    "n_scored_msgs": 1786,
+    "tp": 385,
+    "fp": 1201,
+    "fn": 1196
+   },
+   "simmax": {
+    "link": {
+     "P": 35.9,
+     "R": 36.0,
+     "F1": 35.9
+    },
+    "root": {
+     "P": 97.6,
+     "R": 100.0,
+     "F1": 98.8
+    },
+    "cats": {
+     "1-1": {
+      "P": 49.3,
+      "R": 36.3,
+      "F1": 41.8
+     },
+     "1-many": {
+      "P": 28.4,
+      "R": 35.7,
+      "F1": 31.6
+     }
+    },
+    "unidentified_pct": 64.0,
+    "hallucination_pct": 64.1,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.885,
+    "density_pred": 0.888,
+    "coverage_pct": 88.8,
+    "n_scored_msgs": 1786,
+    "tp": 569,
+    "fp": 1017,
+    "fn": 1012
+   },
+   "PairMLP": {
+    "link": {
+     "P": 74.1,
+     "R": 76.0,
+     "F1": 75.0
+    },
+    "root": {
+     "P": 97.6,
+     "R": 100.0,
+     "F1": 98.8
+    },
+    "cats": {
+     "1-1": {
+      "P": 74.9,
+      "R": 89.5,
+      "F1": 81.6
+     },
+     "1-many": {
+      "P": 77.3,
+      "R": 63.1,
+      "F1": 69.5
+     },
+     "many-1": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "many-many": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     }
+    },
+    "unidentified_pct": 24.0,
+    "hallucination_pct": 25.9,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.885,
+    "density_pred": 0.908,
+    "coverage_pct": 88.8,
+    "n_scored_msgs": 1786,
+    "tp": 1201,
+    "fp": 420,
+    "fn": 380
+   },
+   "MHA-Net": {
+    "link": {
+     "P": 72.0,
+     "R": 75.6,
+     "F1": 73.8
+    },
+    "root": {
+     "P": 97.6,
+     "R": 100.0,
+     "F1": 98.8
+    },
+    "cats": {
+     "1-1": {
+      "P": 74.4,
+      "R": 88.7,
+      "F1": 80.9
+     },
+     "1-many": {
+      "P": 77.2,
+      "R": 63.2,
+      "F1": 69.5
+     },
+     "many-1": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "many-many": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     }
+    },
+    "unidentified_pct": 24.4,
+    "hallucination_pct": 28.0,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.885,
+    "density_pred": 0.931,
+    "coverage_pct": 88.8,
+    "n_scored_msgs": 1786,
+    "tp": 1196,
+    "fp": 466,
+    "fn": 385
+   }
+  },
+  "discord": {
+   "prev1": {
+    "link": {
+     "P": 28.9,
+     "R": 71.5,
+     "F1": 41.1
+    },
+    "root": {
+     "P": 4.7,
+     "R": 100.0,
+     "F1": 9.0
+    },
+    "cats": {
+     "1-1": {
+      "P": 26.6,
+      "R": 78.5,
+      "F1": 39.7
+     },
+     "1-many": {
+      "P": 100.0,
+      "R": 41.3,
+      "F1": 58.5
+     }
+    },
+    "unidentified_pct": 28.5,
+    "hallucination_pct": 71.1,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.392,
+    "density_pred": 0.971,
+    "coverage_pct": 97.1,
+    "n_scored_msgs": 2733,
+    "tp": 766,
+    "fp": 1889,
+    "fn": 305
+   },
+   "saprev": {
+    "link": {
+     "P": 6.0,
+     "R": 14.9,
+     "F1": 8.6
+    },
+    "root": {
+     "P": 4.7,
+     "R": 100.0,
+     "F1": 9.0
+    },
+    "cats": {
+     "1-1": {
+      "P": 6.9,
+      "R": 15.6,
+      "F1": 9.5
+     },
+     "1-many": {
+      "P": 3.6,
+      "R": 11.9,
+      "F1": 5.5
+     }
+    },
+    "unidentified_pct": 85.1,
+    "hallucination_pct": 94.0,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.392,
+    "density_pred": 0.971,
+    "coverage_pct": 97.1,
+    "n_scored_msgs": 2733,
+    "tp": 160,
+    "fp": 2495,
+    "fn": 911
+   },
+   "simmax": {
+    "link": {
+     "P": 5.1,
+     "R": 12.7,
+     "F1": 7.3
+    },
+    "root": {
+     "P": 4.7,
+     "R": 100.0,
+     "F1": 9.0
+    },
+    "cats": {
+     "1-1": {
+      "P": 14.1,
+      "R": 12.3,
+      "F1": 13.1
+     },
+     "1-many": {
+      "P": 1.5,
+      "R": 14.4,
+      "F1": 2.8
+     }
+    },
+    "unidentified_pct": 87.3,
+    "hallucination_pct": 94.9,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.392,
+    "density_pred": 0.971,
+    "coverage_pct": 97.1,
+    "n_scored_msgs": 2733,
+    "tp": 136,
+    "fp": 2519,
+    "fn": 935
+   },
+   "PairMLP": {
+    "link": {
+     "P": 31.4,
+     "R": 77.8,
+     "F1": 44.7
+    },
+    "root": {
+     "P": 4.7,
+     "R": 100.0,
+     "F1": 9.0
+    },
+    "cats": {
+     "1-1": {
+      "P": 41.2,
+      "R": 82.4,
+      "F1": 54.9
+     },
+     "1-many": {
+      "P": 12.7,
+      "R": 57.7,
+      "F1": 20.8
+     }
+    },
+    "unidentified_pct": 22.2,
+    "hallucination_pct": 68.6,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.392,
+    "density_pred": 0.971,
+    "coverage_pct": 97.1,
+    "n_scored_msgs": 2733,
+    "tp": 833,
+    "fp": 1822,
+    "fn": 238
+   },
+   "MHA-Net": {
+    "link": {
+     "P": 30.7,
+     "R": 76.1,
+     "F1": 43.7
+    },
+    "root": {
+     "P": 4.7,
+     "R": 100.0,
+     "F1": 9.0
+    },
+    "cats": {
+     "1-1": {
+      "P": 37.5,
+      "R": 80.7,
+      "F1": 51.2
+     },
+     "1-many": {
+      "P": 14.4,
+      "R": 56.2,
+      "F1": 22.9
+     }
+    },
+    "unidentified_pct": 23.9,
+    "hallucination_pct": 69.3,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.392,
+    "density_pred": 0.971,
+    "coverage_pct": 97.1,
+    "n_scored_msgs": 2733,
+    "tp": 815,
+    "fp": 1840,
+    "fn": 256
+   }
+  },
+  "slack": {
+   "prev1": {
+    "link": {
+     "P": 1.7,
+     "R": 15.4,
+     "F1": 3.1
+    },
+    "root": {
+     "P": 0.1,
+     "R": 100.0,
+     "F1": 0.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "1-many": {
+      "P": 100.0,
+      "R": 15.8,
+      "F1": 27.2
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 10.6,
+      "F1": 19.2
+     }
+    },
+    "unidentified_pct": 84.6,
+    "hallucination_pct": 98.3,
+    "multi_parent_recall": 10.8,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.113,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 27600,
+    "tp": 482,
+    "fp": 27095,
+    "fn": 2648
+   },
+   "saprev": {
+    "link": {
+     "P": 0.5,
+     "R": 4.3,
+     "F1": 0.9
+    },
+    "root": {
+     "P": 0.1,
+     "R": 100.0,
+     "F1": 0.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "1-many": {
+      "P": 7.4,
+      "R": 4.5,
+      "F1": 5.6
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 1.9,
+      "F1": 3.6
+     }
+    },
+    "unidentified_pct": 95.7,
+    "hallucination_pct": 99.5,
+    "multi_parent_recall": 2.3,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.113,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 27600,
+    "tp": 136,
+    "fp": 27441,
+    "fn": 2994
+   },
+   "simmax": {
+    "link": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0
+    },
+    "root": {
+     "P": 0.1,
+     "R": 100.0,
+     "F1": 0.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "1-many": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "many-many": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     }
+    },
+    "unidentified_pct": 100.0,
+    "hallucination_pct": 100.0,
+    "multi_parent_recall": 0.0,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.113,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 27600,
+    "tp": 0,
+    "fp": 27577,
+    "fn": 3130
+   },
+   "PairMLP": {
+    "link": {
+     "P": 6.3,
+     "R": 55.4,
+     "F1": 11.3
+    },
+    "root": {
+     "P": 0.1,
+     "R": 100.0,
+     "F1": 0.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "1-many": {
+      "P": 6.1,
+      "R": 56.8,
+      "F1": 11.0
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 35.6,
+      "F1": 52.6
+     }
+    },
+    "unidentified_pct": 44.6,
+    "hallucination_pct": 93.7,
+    "multi_parent_recall": 36.0,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.113,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 27600,
+    "tp": 1733,
+    "fp": 25844,
+    "fn": 1397
+   },
+   "MHA-Net": {
+    "link": {
+     "P": 6.3,
+     "R": 55.3,
+     "F1": 11.3
+    },
+    "root": {
+     "P": 0.1,
+     "R": 100.0,
+     "F1": 0.2
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+     },
+     "1-many": {
+      "P": 6.0,
+      "R": 56.8,
+      "F1": 10.9
+     },
+     "many-many": {
+      "P": 100.0,
+      "R": 35.6,
+      "F1": 52.6
+     }
+    },
+    "unidentified_pct": 44.7,
+    "hallucination_pct": 93.7,
+    "multi_parent_recall": 36.0,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.113,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 27600,
+    "tp": 1732,
+    "fp": 25845,
+    "fn": 1398
+   }
+  },
+  "hn": {
+   "prev1": {
+    "link": {
+     "P": 0.8,
+     "R": 1.8,
+     "F1": 1.1
+    },
+    "root": {
+     "P": 0.2,
+     "R": 100.0,
+     "F1": 0.4
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.5,
+      "R": 2.6,
+      "F1": 0.8
+     },
+     "1-many": {
+      "P": 100.0,
+      "R": 1.2,
+      "F1": 2.3
+     }
+    },
+    "unidentified_pct": 98.2,
+    "hallucination_pct": 99.2,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.426,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 11711,
+    "tp": 88,
+    "fp": 11608,
+    "fn": 4903
+   },
+   "saprev": {
+    "link": {
+     "P": 0.6,
+     "R": 1.3,
+     "F1": 0.8
+    },
+    "root": {
+     "P": 0.2,
+     "R": 100.0,
+     "F1": 0.4
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.5,
+      "R": 1.7,
+      "F1": 0.8
+     },
+     "1-many": {
+      "P": 0.7,
+      "R": 1.0,
+      "F1": 0.8
+     }
+    },
+    "unidentified_pct": 98.7,
+    "hallucination_pct": 99.4,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.426,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 11711,
+    "tp": 65,
+    "fp": 11631,
+    "fn": 4926
+   },
+   "simmax": {
+    "link": {
+     "P": 2.9,
+     "R": 6.7,
+     "F1": 4.0
+    },
+    "root": {
+     "P": 0.2,
+     "R": 100.0,
+     "F1": 0.4
+    },
+    "cats": {
+     "1-1": {
+      "P": 4.0,
+      "R": 6.8,
+      "F1": 5.0
+     },
+     "1-many": {
+      "P": 2.3,
+      "R": 6.6,
+      "F1": 3.5
+     }
+    },
+    "unidentified_pct": 93.3,
+    "hallucination_pct": 97.1,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.426,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 11711,
+    "tp": 334,
+    "fp": 11362,
+    "fn": 4657
+   },
+   "PairMLP": {
+    "link": {
+     "P": 2.7,
+     "R": 6.2,
+     "F1": 3.7
+    },
+    "root": {
+     "P": 0.2,
+     "R": 100.0,
+     "F1": 0.4
+    },
+    "cats": {
+     "1-1": {
+      "P": 4.0,
+      "R": 7.5,
+      "F1": 5.2
+     },
+     "1-many": {
+      "P": 1.9,
+      "R": 5.2,
+      "F1": 2.8
+     }
+    },
+    "unidentified_pct": 93.8,
+    "hallucination_pct": 97.3,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.426,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 11711,
+    "tp": 311,
+    "fp": 11385,
+    "fn": 4680
+   },
+   "MHA-Net": {
+    "link": {
+     "P": 1.3,
+     "R": 3.0,
+     "F1": 1.8
+    },
+    "root": {
+     "P": 0.2,
+     "R": 100.0,
+     "F1": 0.4
+    },
+    "cats": {
+     "1-1": {
+      "P": 2.6,
+      "R": 3.7,
+      "F1": 3.0
+     },
+     "1-many": {
+      "P": 0.8,
+      "R": 2.5,
+      "F1": 1.2
+     }
+    },
+    "unidentified_pct": 97.0,
+    "hallucination_pct": 98.7,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.426,
+    "density_pred": 0.999,
+    "coverage_pct": 99.9,
+    "n_scored_msgs": 11711,
+    "tp": 150,
+    "fp": 11546,
+    "fn": 4841
+   }
+  },
+  "reddit": {
+   "prev1": {
+    "link": {
+     "P": 1.4,
+     "R": 3.2,
+     "F1": 2.0
+    },
+    "root": {
+     "P": 0.8,
+     "R": 100.0,
+     "F1": 1.5
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.9,
+      "R": 5.2,
+      "F1": 1.5
+     },
+     "1-many": {
+      "P": 100.0,
+      "R": 1.9,
+      "F1": 3.8
+     }
+    },
+    "unidentified_pct": 96.8,
+    "hallucination_pct": 98.6,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.447,
+    "density_pred": 0.996,
+    "coverage_pct": 99.6,
+    "n_scored_msgs": 2616,
+    "tp": 37,
+    "fp": 2568,
+    "fn": 1132
+   },
+   "saprev": {
+    "link": {
+     "P": 0.7,
+     "R": 1.5,
+     "F1": 1.0
+    },
+    "root": {
+     "P": 0.8,
+     "R": 100.0,
+     "F1": 1.5
+    },
+    "cats": {
+     "1-1": {
+      "P": 0.3,
+      "R": 1.3,
+      "F1": 0.5
+     },
+     "1-many": {
+      "P": 1.6,
+      "R": 1.7,
+      "F1": 1.6
+     }
+    },
+    "unidentified_pct": 98.5,
+    "hallucination_pct": 99.3,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.447,
+    "density_pred": 0.996,
+    "coverage_pct": 99.6,
+    "n_scored_msgs": 2616,
+    "tp": 18,
+    "fp": 2587,
+    "fn": 1151
+   },
+   "simmax": {
+    "link": {
+     "P": 2.5,
+     "R": 5.5,
+     "F1": 3.4
+    },
+    "root": {
+     "P": 0.8,
+     "R": 100.0,
+     "F1": 1.5
+    },
+    "cats": {
+     "1-1": {
+      "P": 2.6,
+      "R": 4.5,
+      "F1": 3.3
+     },
+     "1-many": {
+      "P": 2.4,
+      "R": 6.1,
+      "F1": 3.4
+     }
+    },
+    "unidentified_pct": 94.5,
+    "hallucination_pct": 97.5,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.447,
+    "density_pred": 0.996,
+    "coverage_pct": 99.6,
+    "n_scored_msgs": 2616,
+    "tp": 64,
+    "fp": 2541,
+    "fn": 1105
+   },
+   "PairMLP": {
+    "link": {
+     "P": 2.1,
+     "R": 4.7,
+     "F1": 2.9
+    },
+    "root": {
+     "P": 0.8,
+     "R": 100.0,
+     "F1": 1.5
+    },
+    "cats": {
+     "1-1": {
+      "P": 3.0,
+      "R": 7.9,
+      "F1": 4.3
+     },
+     "1-many": {
+      "P": 1.4,
+      "R": 2.8,
+      "F1": 1.9
+     }
+    },
+    "unidentified_pct": 95.3,
+    "hallucination_pct": 97.9,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.447,
+    "density_pred": 0.996,
+    "coverage_pct": 99.6,
+    "n_scored_msgs": 2616,
+    "tp": 55,
+    "fp": 2550,
+    "fn": 1114
+   },
+   "MHA-Net": {
+    "link": {
+     "P": 1.7,
+     "R": 3.7,
+     "F1": 2.3
+    },
+    "root": {
+     "P": 0.8,
+     "R": 100.0,
+     "F1": 1.5
+    },
+    "cats": {
+     "1-1": {
+      "P": 3.5,
+      "R": 6.1,
+      "F1": 4.5
+     },
+     "1-many": {
+      "P": 0.9,
+      "R": 2.2,
+      "F1": 1.2
+     }
+    },
+    "unidentified_pct": 96.3,
+    "hallucination_pct": 98.3,
+    "multi_parent_recall": null,
+    "fragmentation": 1.0,
+    "affinity": 1.0,
+    "density_gold": 0.447,
+    "density_pred": 0.996,
+    "coverage_pct": 99.6,
+    "n_scored_msgs": 2616,
+    "tp": 43,
+    "fp": 2562,
+    "fn": 1126
+   }
+  }
+ },
+ "runtime_seconds": 12648
+}

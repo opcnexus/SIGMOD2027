@@ -1,0 +1,46 @@
+{
+ "discord": {
+  "PairMLP": {
+   "pathF1": 0.99,
+   "compR": 0,
+   "ancJ": 17.37
+  },
+  "OCR-APT-style": {
+   "pathF1": 6.38,
+   "compR": 6.23,
+   "ancJ": 16.47
+  },
+  "ECB-DeepSeek": {
+   "pathF1": 18.43,
+   "compR": 16.04,
+   "ancJ": 48.47
+  },
+  "ECB-C(constraint)": {
+   "pathF1": null,
+   "compR": null,
+   "ancJ": null
+  }
+ },
+ "slack": {
+  "PairMLP": {
+   "pathF1": 0,
+   "compR": 0,
+   "ancJ": 1.87
+  },
+  "OCR-APT-style": {
+   "pathF1": 0,
+   "compR": 0,
+   "ancJ": 1.87
+  },
+  "ECB-DeepSeek": {
+   "pathF1": 3.41,
+   "compR": 3.3,
+   "ancJ": 2.38
+  },
+  "ECB-C(constraint)": {
+   "pathF1": 99.53,
+   "compR": 99.57,
+   "ancJ": 99.32
+  }
+ }
+}

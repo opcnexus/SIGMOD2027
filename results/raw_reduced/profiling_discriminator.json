@@ -1,0 +1,192 @@
+{
+ "completed_at": "2026-09-26 22:18",
+ "features": [
+  "root_ratio",
+  "multi_parent_ratio",
+  "parent_dist_mean",
+  "parent_dist_median",
+  "latency_mean_s",
+  "latency_median_s",
+  "tree_depth_mean",
+  "inter_gap_mean_s"
+ ],
+ "per_dataset": {
+  "irc": {
+   "n_convs": 173,
+   "feat_mean": [
+    0.1549,
+    0.0299,
+    5.7054,
+    2.815,
+    0.0,
+    0.0,
+    8.4704,
+    0.0
+   ],
+   "coverage_pct": 99.56,
+   "n_edges": 57997
+  },
+  "molweni": {
+   "n_convs": 1100,
+   "feat_mean": [
+    0.1182,
+    0.0002,
+    1.635,
+    1.3236,
+    0.0,
+    0.0,
+    3.737,
+    0.0
+   ],
+   "coverage_pct": 100.0,
+   "n_edges": 8654
+  },
+  "hn": {
+   "n_convs": 100,
+   "feat_mean": [
+    0.2731,
+    0.0,
+    135.7615,
+    76.465,
+    21067.6967,
+    5992.67,
+    3.2082,
+    1123.361
+   ],
+   "coverage_pct": 56.22,
+   "n_edges": 64105
+  },
+  "reddit": {
+   "n_convs": 200,
+   "feat_mean": [
+    0.3316,
+    0.0,
+    45.8484,
+    30.2775,
+    10205.6161,
+    3905.92,
+    2.9295,
+    828.4638
+   ],
+   "coverage_pct": 82.38,
+   "n_edges": 26612
+  },
+  "discord": {
+   "n_convs": 512,
+   "feat_mean": [
+    0.6531,
+    0.0,
+    1.4948,
+    1.1084,
+    9309.0814,
+    3913.4697,
+    1.6876,
+    23997.8038
+   ],
+   "coverage_pct": 100.0,
+   "n_edges": 7017
+  },
+  "slack": {
+   "n_convs": 150,
+   "feat_mean": [
+    0.889,
+    0.004,
+    12.8182,
+    4.6067,
+    1543.5274,
+    379.5469,
+    1.1393,
+    223.1867
+   ],
+   "coverage_pct": 97.98,
+   "n_edges": 19770
+  }
+ },
+ "layer_lopo_accuracy_pct": {
+  "irc": 98.3,
+  "molweni": 27.7,
+  "hn": 100.0,
+  "reddit": 71.5,
+  "discord": 6.2,
+  "slack": 98.0,
+  "macro_avg": 67.0
+ },
+ "layer_lopo_confusion_rows_true_cols_pred__annotated_forum_realchat": [
+  [
+   475,
+   797,
+   1
+  ],
+  [
+   37,
+   243,
+   20
+  ],
+  [
+   3,
+   480,
+   179
+  ]
+ ],
+ "platform_5fold_accuracy_pct": {
+  "overall": 98.5,
+  "irc": 96.5,
+  "molweni": 99.8,
+  "hn": 87.0,
+  "reddit": 97.5,
+  "discord": 98.6,
+  "slack": 100.0
+ },
+ "platform_5fold_confusion_rows_true_cols_pred__6platforms": [
+  [
+   167,
+   6,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   2,
+   1098,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   87,
+   13,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   2,
+   195,
+   1,
+   1
+  ],
+  [
+   2,
+   3,
+   0,
+   0,
+   505,
+   2
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   150
+  ]
+ ],
+ "window_W": 100,
+ "runtime_seconds": 30
+}

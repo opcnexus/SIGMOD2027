@@ -1,0 +1,49 @@
+{
+ "metric": "backtrack_reconstruction_accuracy",
+ "definition": "For every message with a gold parent, recursively backtrack along the predicted edges to the root and take the Jaccard similarity of the predicted and gold ancestor closures, x100 (macro average over test conversations)",
+ "completed_at": "2026-09-27 11:44",
+ "datasets": {
+  "irc": {
+   "prev1": 7.44,
+   "saprev": 10.6,
+   "simmax": 2.89,
+   "PairMLP": 6.7,
+   "MHA-Net": 7.43
+  },
+  "molweni": {
+   "prev1": 73.74,
+   "saprev": 56.32,
+   "simmax": 57.04,
+   "PairMLP": 81.99,
+   "MHA-Net": 81.98
+  },
+  "discord": {
+   "prev1": 15.89,
+   "saprev": 12.55,
+   "simmax": 8.58,
+   "PairMLP": 17.37,
+   "MHA-Net": 17.29
+  },
+  "slack": {
+   "prev1": 0.48,
+   "saprev": 0.31,
+   "simmax": 0.04,
+   "PairMLP": 1.87,
+   "MHA-Net": 1.85
+  },
+  "hn": {
+   "prev1": 1.06,
+   "saprev": 1.4,
+   "simmax": 2.3,
+   "PairMLP": 1.72,
+   "MHA-Net": 1.52
+  },
+  "reddit": {
+   "prev1": 3.46,
+   "saprev": 4.69,
+   "simmax": 4.69,
+   "PairMLP": 3.91,
+   "MHA-Net": 3.78
+  }
+ }
+}

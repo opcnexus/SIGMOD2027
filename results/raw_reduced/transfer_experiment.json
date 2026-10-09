@@ -1,0 +1,186 @@
+{
+ "completed_at": "2026-09-26 02:16",
+ "device": "mps",
+ "config": {
+  "W": 100,
+  "hash_dim": 20000,
+  "emb_dim": 64,
+  "epochs": 12,
+  "patience": 3,
+  "seed": 42
+ },
+ "features": "char3gram-hashing(64d)+same_author+log_idxgap+log_timelap+has_ts+log_len_diff+log_interleave; causal MHA encoder; BCE multi-label; tau=0.5 w/ argmax fallback",
+ "datasets": {
+  "irc": {
+   "train": {
+    "convs": 117,
+    "msgs": 44785,
+    "gold_edges": 39953,
+    "time_violations": 0
+   },
+   "dev": {
+    "convs": 21,
+    "msgs": 8341,
+    "gold_edges": 7403,
+    "time_violations": 0
+   },
+   "test": {
+    "convs": 35,
+    "msgs": 13017,
+    "gold_edges": 11553,
+    "time_violations": 0
+   }
+  },
+  "molweni": {
+   "train": {
+    "convs": 800,
+    "msgs": 7113,
+    "gold_edges": 6314,
+    "time_violations": 0
+   },
+   "dev": {
+    "convs": 100,
+    "msgs": 860,
+    "gold_edges": 759,
+    "time_violations": 0
+   },
+   "test": {
+    "convs": 200,
+    "msgs": 1786,
+    "gold_edges": 1581,
+    "time_violations": 0
+   }
+  },
+  "discord": {
+   "train": {
+    "convs": 205,
+    "msgs": 4694,
+    "gold_edges": 4694,
+    "time_violations": 0
+   },
+   "dev": {
+    "convs": 44,
+    "msgs": 863,
+    "gold_edges": 863,
+    "time_violations": 0
+   },
+   "test": {
+    "convs": 45,
+    "msgs": 1403,
+    "gold_edges": 1403,
+    "time_violations": 0
+   }
+  }
+ },
+ "results": {
+  "irc->irc": {
+   "baseline_prev1": {
+    "P": 25.6,
+    "R": 24.6,
+    "F1": 25.1
+   },
+   "model": {
+    "P": 28.3,
+    "R": 27.7,
+    "F1": 28.0,
+    "tp": 3136,
+    "fp": 7939,
+    "fn": 8178
+   },
+   "n_train": 117,
+   "n_test": 35
+  },
+  "molweni->molweni": {
+   "baseline_prev1": {
+    "P": 63.5,
+    "R": 63.5,
+    "F1": 63.5
+   },
+   "model": {
+    "P": 73.9,
+    "R": 75.8,
+    "F1": 74.9,
+    "tp": 1199,
+    "fp": 423,
+    "fn": 382
+   },
+   "n_train": 800,
+   "n_test": 200
+  },
+  "discord->discord": {
+   "baseline_prev1": {
+    "P": 26.4,
+    "R": 26.4,
+    "F1": 26.4
+   },
+   "model": {
+    "P": 28.5,
+    "R": 73.0,
+    "F1": 41.0,
+    "tp": 387,
+    "fp": 971,
+    "fn": 143
+   },
+   "n_train": 205,
+   "n_test": 45
+  },
+  "irc->discord": {
+   "baseline_prev1": {
+    "P": 26.4,
+    "R": 26.4,
+    "F1": 26.4
+   },
+   "model": {
+    "P": 23.1,
+    "R": 59.2,
+    "F1": 33.3,
+    "tp": 314,
+    "fp": 1044,
+    "fn": 216
+   },
+   "n_train": 117,
+   "n_test": 45
+  },
+  "discord->irc": {
+   "baseline_prev1": {
+    "P": 25.6,
+    "R": 24.6,
+    "F1": 25.1
+   },
+   "model": {
+    "P": 17.6,
+    "R": 17.2,
+    "F1": 17.4,
+    "tp": 1949,
+    "fp": 9126,
+    "fn": 9365
+   },
+   "n_train": 205,
+   "n_test": 35
+  },
+  "molweni->discord": {
+   "baseline_prev1": {
+    "P": 26.4,
+    "R": 26.4,
+    "F1": 26.4
+   },
+   "model": {
+    "P": 28.4,
+    "R": 73.0,
+    "F1": 40.8,
+    "tp": 387,
+    "fp": 978,
+    "fn": 143
+   },
+   "n_train": 800,
+   "n_test": 45
+  }
+ },
+ "notes": [],
+ "F1_decay": {
+  "irc_to_discord_F1_drop": 7.7,
+  "discord_to_irc_F1_drop": 10.6,
+  "molweni_to_discord_F1_drop": 0.2
+ },
+ "runtime_seconds": 6854
+}

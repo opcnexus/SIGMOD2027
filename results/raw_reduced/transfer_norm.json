@@ -1,0 +1,20 @@
+{
+ "completed_at": "2026-09-27 07:44",
+ "hypothesis": "J2 asymmetry caused by latency distribution shift; fix = source-ECDF quantile normalization of tgap",
+ "baseline_source": "results/transfer_experiment.json (single seed 42)",
+ "discord2irc": {
+  "norm_F1": 17.3,
+  "baseline_F1": 17.4,
+  "in_domain_irc_F1": 28.0,
+  "baseline_decay_pct": -37.9,
+  "norm_decay_pct": -38.2
+ },
+ "irc2discord": {
+  "norm_F1": 17.4,
+  "baseline_F1": 33.3,
+  "in_domain_discord_F1": 41.0,
+  "baseline_decay_pct": -18.8,
+  "norm_decay_pct": -57.6
+ },
+ "runtime_seconds": 3475
+}

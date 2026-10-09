@@ -1,0 +1,387 @@
+{
+ "completed_at": "2026-09-25 22:27",
+ "datasets": {
+  "irc": {
+   "structured": true,
+   "n_conv": 100,
+   "n_msg": 49765,
+   "msgs_per_conv": {
+    "median": 1500.0,
+    "mean": 1497.7,
+    "p90": 1697.2
+   },
+   "participants_per_conv": {
+    "median": 126.0,
+    "mean": 128.1
+   },
+   "msg_gap_sec": {
+    "median": 60,
+    "p90": 60
+   },
+   "mention_rate_pct": 0.0,
+   "root_pct": 28.05,
+   "multi_parent_pct": 2.71,
+   "avg_parents_per_msg": 0.749,
+   "parent_lag_index": {
+    "median": 4.0,
+    "within5_pct": 62.9,
+    "gt20_pct": 7.5
+   },
+   "interleave_msgs": {
+    "median": 3.0
+   },
+   "parent_child_time_lag_sec": {
+    "median": 0,
+    "p90": 120.0
+   },
+   "reply_depth": {
+    "mean": 2.08,
+    "max": 101
+   },
+   "hour_hist_utc": {
+    "0": 487,
+    "1": 1704,
+    "2": 2491,
+    "3": 3401,
+    "4": 1925,
+    "5": 1526,
+    "6": 3768,
+    "7": 3389,
+    "8": 2736,
+    "9": 2798,
+    "10": 2115,
+    "11": 2505,
+    "12": 1979,
+    "13": 425,
+    "14": 243,
+    "15": 362,
+    "16": 218,
+    "17": 754,
+    "18": 1101,
+    "19": 881,
+    "20": 520,
+    "21": 178,
+    "23": 183
+   },
+   "n_edges": 37282
+  },
+  "molweni": {
+   "structured": true,
+   "n_conv": 10000,
+   "n_msg": 88303,
+   "msgs_per_conv": {
+    "median": 8.0,
+    "mean": 8.8,
+    "p90": 12.0
+   },
+   "participants_per_conv": {
+    "median": 3.0,
+    "mean": 3.5
+   },
+   "msg_gap_sec": {
+    "median": null,
+    "p90": null
+   },
+   "mention_rate_pct": 0.0,
+   "root_pct": 11.4,
+   "multi_parent_pct": 0.01,
+   "avg_parents_per_msg": 0.886,
+   "parent_lag_index": {
+    "median": 1,
+    "within5_pct": 98.3,
+    "gt20_pct": 0.0
+   },
+   "interleave_msgs": {
+    "median": 0
+   },
+   "parent_child_time_lag_sec": null,
+   "reply_depth": {
+    "mean": 2.89,
+    "max": 13
+   },
+   "hour_hist_utc": {},
+   "n_edges": 78245
+  },
+  "hn": {
+   "structured": true,
+   "n_conv": 120,
+   "n_msg": 136327,
+   "msgs_per_conv": {
+    "median": 958.0,
+    "mean": 1136.1,
+    "p90": 2271.5
+   },
+   "participants_per_conv": {
+    "median": 563.0,
+    "mean": 646.0
+   },
+   "msg_gap_sec": {
+    "median": 1972,
+    "p90": 30834
+   },
+   "mention_rate_pct": 0.0,
+   "root_pct": 0.09,
+   "multi_parent_pct": 0.0,
+   "avg_parents_per_msg": 0.999,
+   "parent_lag_index": {
+    "median": 2,
+    "within5_pct": 62.1,
+    "gt20_pct": 26.0
+   },
+   "interleave_msgs": {
+    "median": 1
+   },
+   "parent_child_time_lag_sec": {
+    "median": 5003,
+    "p90": 44816.1
+   },
+   "reply_depth": {
+    "mean": 3.89,
+    "max": 24
+   },
+   "hour_hist_utc": {
+    "0": 5322,
+    "1": 4864,
+    "2": 4103,
+    "3": 3503,
+    "4": 3487,
+    "5": 3074,
+    "6": 3215,
+    "7": 3352,
+    "8": 3556,
+    "9": 3674,
+    "10": 3536,
+    "11": 3599,
+    "12": 4191,
+    "13": 4989,
+    "14": 5562,
+    "15": 6022,
+    "16": 7180,
+    "17": 9478,
+    "18": 9698,
+    "19": 9525,
+    "20": 9736,
+    "21": 9967,
+    "22": 7908,
+    "23": 6666
+   },
+   "n_edges": 136207
+  },
+  "reddit": {
+   "structured": true,
+   "n_conv": 640,
+   "n_msg": 62224,
+   "msgs_per_conv": {
+    "median": 61.0,
+    "mean": 97.2,
+    "p90": 200.0
+   },
+   "participants_per_conv": {
+    "median": 42.0,
+    "mean": 48.0
+   },
+   "msg_gap_sec": {
+    "median": 41,
+    "p90": 627
+   },
+   "mention_rate_pct": 0.0,
+   "root_pct": 1.07,
+   "multi_parent_pct": 0.0,
+   "avg_parents_per_msg": 0.989,
+   "parent_lag_index": {
+    "median": 29,
+    "within5_pct": 16.9,
+    "gt20_pct": 57.8
+   },
+   "interleave_msgs": {
+    "median": 28
+   },
+   "parent_child_time_lag_sec": {
+    "median": 903,
+    "p90": 10848.9
+   },
+   "reply_depth": {
+    "mean": 2.25,
+    "max": 36
+   },
+   "hour_hist_utc": {
+    "0": 3491,
+    "1": 6324,
+    "2": 1899,
+    "3": 1378,
+    "4": 1162,
+    "5": 1187,
+    "6": 951,
+    "7": 640,
+    "8": 414,
+    "9": 426,
+    "10": 764,
+    "11": 1118,
+    "12": 1033,
+    "13": 988,
+    "14": 2555,
+    "15": 3662,
+    "16": 5092,
+    "17": 3504,
+    "18": 3340,
+    "19": 4990,
+    "20": 3753,
+    "21": 4940,
+    "22": 3608,
+    "23": 4341
+   },
+   "n_edges": 61560
+  },
+  "bilibili": {
+   "structured": true,
+   "n_conv": 10,
+   "n_msg": 407,
+   "msgs_per_conv": {
+    "median": 40.0,
+    "mean": 40.7,
+    "p90": 62.6
+   },
+   "participants_per_conv": {
+    "median": 35.0,
+    "mean": 37.2
+   },
+   "msg_gap_sec": {
+    "median": 200,
+    "p90": 4585
+   },
+   "mention_rate_pct": 0.0,
+   "root_pct": 7.37,
+   "multi_parent_pct": 0.0,
+   "avg_parents_per_msg": 0.926,
+   "parent_lag_index": {
+    "median": 13,
+    "within5_pct": 22.3,
+    "gt20_pct": 26.0
+   },
+   "interleave_msgs": {
+    "median": 12
+   },
+   "parent_child_time_lag_sec": {
+    "median": 2739,
+    "p90": 20028.0
+   },
+   "reply_depth": {
+    "mean": 0.93,
+    "max": 1
+   },
+   "hour_hist_utc": {
+    "0": 7,
+    "1": 1,
+    "2": 6,
+    "3": 6,
+    "4": 140,
+    "5": 75,
+    "6": 19,
+    "7": 7,
+    "8": 16,
+    "9": 4,
+    "10": 46,
+    "11": 8,
+    "12": 2,
+    "13": 8,
+    "14": 4,
+    "15": 11,
+    "16": 5,
+    "17": 3,
+    "18": 1,
+    "19": 2,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "23": 3
+   },
+   "n_edges": 377
+  },
+  "discord": {
+   "structured": true,
+   "n_conv": 85,
+   "n_msg": 58420,
+   "msgs_per_conv": {
+    "median": 101,
+    "mean": 687.3,
+    "p90": 1571.6
+   },
+   "participants_per_conv": {
+    "median": 19,
+    "mean": 169.2
+   },
+   "msg_gap_sec": {
+    "median": 511,
+    "p90": 61032
+   },
+   "mention_rate_pct": 0.0,
+   "root_pct": 82.93,
+   "multi_parent_pct": 0.0,
+   "avg_parents_per_msg": 0.171,
+   "parent_lag_index": {
+    "median": 2,
+    "within5_pct": 86.2,
+    "gt20_pct": 2.9
+   },
+   "interleave_msgs": {
+    "median": 1
+   },
+   "parent_child_time_lag_sec": {
+    "median": 1158,
+    "p90": 71709.2
+   },
+   "reply_depth": {
+    "mean": 0.28,
+    "max": 39
+   },
+   "hour_hist_utc": {
+    "0": 401,
+    "1": 367,
+    "2": 265,
+    "3": 258,
+    "4": 171,
+    "5": 169,
+    "6": 235,
+    "7": 235,
+    "8": 195,
+    "9": 255,
+    "10": 318,
+    "11": 386,
+    "12": 378,
+    "13": 478,
+    "14": 599,
+    "15": 561,
+    "16": 657,
+    "17": 594,
+    "18": 552,
+    "19": 700,
+    "20": 692,
+    "21": 578,
+    "22": 511,
+    "23": 418
+   },
+   "n_edges": 9973
+  },
+  "slack": {
+   "structured": false,
+   "n_conv": 49,
+   "n_msg": 80187,
+   "msgs_per_conv": {
+    "median": 1527,
+    "mean": 1636.5,
+    "p90": 2151.0
+   },
+   "participants_per_conv": {
+    "median": 35,
+    "mean": 34.2
+   },
+   "msg_gap_sec": {
+    "median": 27,
+    "p90": 191
+   },
+   "mention_rate_pct": 9.9,
+   "hour_hist_utc": {},
+   "n_edges": 0
+  }
+ }
+}

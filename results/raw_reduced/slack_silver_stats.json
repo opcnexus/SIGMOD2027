@@ -1,0 +1,63 @@
+{
+ "completed_at": "2026-09-26 00:26",
+ "window_sec": 21600,
+ "n_rows_total": 1394705,
+ "n_channels": 4,
+ "n_msgs_used": 1394684,
+ "n_msgs_with_mention": 155036,
+ "n_mentions": 162772,
+ "n_mentions_resolved": 149495,
+ "n_multi_parent_msgs": 5153,
+ "parent_time_lag": {
+  "median_sec": 238,
+  "p90_sec": 3416
+ },
+ "parent_idx_lag": {
+  "median": 4,
+  "p90": 20
+ },
+ "examples": [
+  {
+   "channel": "general",
+   "child_text": "<@David> I thought there was one, but cannot find it, so I may have imagined it.",
+   "parent_text": "Is there a `match` predicate in the standard libraries? Something that means “if",
+   "gap_min": 60.1
+  },
+  {
+   "channel": "general",
+   "child_text": "<@David> I thought there was one, but cannot find it, so I may have imagined it.",
+   "parent_text": "Is there a `match` predicate in the standard libraries? Something that means “if",
+   "gap_min": 60.1
+  },
+  {
+   "channel": "general",
+   "child_text": "<@David> I thought there was one, but cannot find it, so I may have imagined it.",
+   "parent_text": "Is there a `match` predicate in the standard libraries? Something that means “if",
+   "gap_min": 60.1
+  },
+  {
+   "channel": "general",
+   "child_text": "<@Theron>: Thank you for your answer.",
+   "parent_text": "<@David> I thought there was one, but cannot find it, so I may have imagined it.",
+   "gap_min": 17.4
+  },
+  {
+   "channel": "general",
+   "child_text": "<@Theron>: Thank you for your answer.",
+   "parent_text": "<@David> I thought there was one, but cannot find it, so I may have imagined it.",
+   "gap_min": 17.4
+  }
+ ],
+ "convs_written": 416,
+ "msgs_written": 1394684,
+ "time_violations": 0,
+ "mention_rate_pct": 11.12,
+ "resolution_rate_pct": 91.84,
+ "multi_parent_pct": 0.369,
+ "runtime_seconds": 10,
+ "example_resolved_edge": {
+  "child": "<@Leda> note that when an exception is thrown inside a future, it's reserved and",
+  "parent": "my evidence is just a simple `println` inside the future, when running on disk i",
+  "gap_min": 1.1
+ }
+}

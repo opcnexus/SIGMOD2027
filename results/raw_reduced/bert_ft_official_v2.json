@@ -1,0 +1,17 @@
+{
+  "model": "distilbert+digat end-to-end",
+  "tag": "bert_ft_official_v2",
+  "protocol": "OFFICIAL 153/10/10 (comparable to literature)",
+  "best_dev_F1": 24.8,
+  "test": {
+    "P": 24.6,
+    "R": 23.7,
+    "F1": 24.1,
+    "gold": 5187,
+    "auto": 5000,
+    "matched": 1229
+  },
+  "epochs_run": 4,
+  "train_seconds": 61652,
+  "completed_at": "2026-09-27 08:49"
+}

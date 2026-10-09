@@ -1,0 +1,25 @@
+{
+  "model": "digat_v3",
+  "tag": "pred_time_cv",
+  "use_thread": true,
+  "multi_parent_head": true,
+  "thread_source": "pred",
+  "use_time": true,
+  "mp_cap": 3,
+  "thread_drop": 0.3,
+  "tau_link": 0.45,
+  "best_dev_F1": 37.0,
+  "test": {
+    "P": 37.4,
+    "R": 42.1,
+    "F1": 39.6,
+    "gold": 15892,
+    "auto": 17871,
+    "matched": 6685
+  },
+  "epochs_run": 60,
+  "train_seconds": 2444,
+  "completed_at": "2026-09-25 20:52",
+  "protocol": "80/20 pooled split seed=42 (NOT comparable to official)",
+  "leakage_note": "thread edges from v2 predictions (honest)"
+}

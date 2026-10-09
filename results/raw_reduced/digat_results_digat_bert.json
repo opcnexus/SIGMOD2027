@@ -1,0 +1,14 @@
+{
+  "model": "digat",
+  "bert": true,
+  "best_dev_F1": 50.8,
+  "test": {
+    "P": 51.5,
+    "R": 50.0,
+    "F1": 50.8,
+    "gold": 15892,
+    "auto": 15431,
+    "matched": 7953
+  },
+  "epochs_run": 54
+}

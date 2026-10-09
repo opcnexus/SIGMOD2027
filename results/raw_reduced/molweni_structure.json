@@ -1,0 +1,135 @@
+{
+  "completed_at": "2026-09-25 18:50",
+  "note": "EDU-level annotation (Molweni DP); x=parent y=child",
+  "relation_type_hist": {
+    "QAP": 15766,
+    "Comment": 24797,
+    "Clarification_question": 18751,
+    "Continuation": 5274,
+    "Acknowledgement": 2528,
+    "Conditional": 795,
+    "Contrast": 966,
+    "Explanation": 1273,
+    "Elaboration": 1740,
+    "Result": 2024,
+    "Correction": 1013,
+    "Q-Elab": 2383,
+    "Parallel": 189,
+    "Background": 287,
+    "Alternation": 187,
+    "Narration": 272
+  },
+  "splits": {
+    "train": {
+      "n_dialogs": 9000,
+      "n_edus": 79487,
+      "root": 9043,
+      "single_parent": 70434,
+      "multi_parent": 10,
+      "root_pct": 11.38,
+      "single_pct": 88.61,
+      "multi_pct": 0.01,
+      "parent_distance_hist_capped20": {
+        "1": 45742,
+        "2": 15136,
+        "3": 5197,
+        "4": 2137,
+        "5": 1033,
+        "6": 638,
+        "7": 291,
+        "8": 156,
+        "9": 70,
+        "10": 35,
+        "0": 3,
+        "11": 3,
+        "-1": 2,
+        "12": 1
+      },
+      "multi_examples": [
+        {
+          "dialog": "6274",
+          "edu": 3,
+          "parents": [
+            0,
+            0
+          ]
+        },
+        {
+          "dialog": "9429",
+          "edu": 11,
+          "parents": [
+            10,
+            10
+          ]
+        },
+        {
+          "dialog": "4238",
+          "edu": 5,
+          "parents": [
+            0,
+            4
+          ]
+        },
+        {
+          "dialog": "4236",
+          "edu": 5,
+          "parents": [
+            0,
+            4
+          ]
+        },
+        {
+          "dialog": "4183",
+          "edu": 2,
+          "parents": [
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    "dev": {
+      "n_dialogs": 500,
+      "n_edus": 4386,
+      "root": 506,
+      "single_parent": 3880,
+      "multi_parent": 0,
+      "root_pct": 11.54,
+      "single_pct": 88.46,
+      "multi_pct": 0.0,
+      "parent_distance_hist_capped20": {
+        "1": 2537,
+        "2": 858,
+        "3": 290,
+        "4": 132,
+        "5": 40,
+        "7": 4,
+        "6": 15,
+        "9": 4
+      },
+      "multi_examples": []
+    },
+    "test": {
+      "n_dialogs": 500,
+      "n_edus": 4430,
+      "root": 519,
+      "single_parent": 3911,
+      "multi_parent": 0,
+      "root_pct": 11.72,
+      "single_pct": 88.28,
+      "multi_pct": 0.0,
+      "parent_distance_hist_capped20": {
+        "1": 2493,
+        "2": 813,
+        "3": 301,
+        "4": 155,
+        "5": 73,
+        "6": 38,
+        "7": 27,
+        "9": 8,
+        "8": 3
+      },
+      "multi_examples": []
+    }
+  }
+}

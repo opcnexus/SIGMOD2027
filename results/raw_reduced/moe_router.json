@@ -1,0 +1,119 @@
+{
+ "completed_at": "2026-09-27 08:39",
+ "probes": [
+  "prev1",
+  "saprev",
+  "simmax",
+  "PairMLP"
+ ],
+ "datasets": {
+  "irc": {
+   "single": {
+    "prev1": 23.3,
+    "saprev": 23.6,
+    "simmax": 5.7,
+    "PairMLP": 25.7
+   },
+   "routed_F1": 27.0,
+   "oracle_F1": 27.9,
+   "route_distribution": {
+    "prev1": 9,
+    "saprev": 0,
+    "simmax": 0,
+    "PairMLP": 26
+   },
+   "router": "logreg",
+   "gain_vs_best_single": 1.3
+  },
+  "molweni": {
+   "single": {
+    "prev1": 63.4,
+    "saprev": 24.3,
+    "simmax": 35.9,
+    "PairMLP": 75.0
+   },
+   "routed_F1": 73.3,
+   "oracle_F1": 78.2,
+   "route_distribution": {
+    "prev1": 71,
+    "saprev": 0,
+    "simmax": 10,
+    "PairMLP": 119
+   },
+   "router": "logreg",
+   "gain_vs_best_single": -1.7
+  },
+  "discord": {
+   "single": {
+    "prev1": 41.1,
+    "saprev": 8.6,
+    "simmax": 7.3,
+    "PairMLP": 44.8
+   },
+   "routed_F1": 44.0,
+   "oracle_F1": 44.9,
+   "route_distribution": {
+    "prev1": 56,
+    "saprev": 0,
+    "simmax": 0,
+    "PairMLP": 22
+   },
+   "router": "logreg",
+   "gain_vs_best_single": -0.8
+  },
+  "slack": {
+   "single": {
+    "prev1": 3.1,
+    "saprev": 0.9,
+    "simmax": 0.0,
+    "PairMLP": 11.3
+   },
+   "routed_F1": 11.3,
+   "oracle_F1": 11.3,
+   "route_distribution": {
+    "prev1": 0,
+    "saprev": 0,
+    "simmax": 0,
+    "PairMLP": 23
+   },
+   "router": "degenerate→PairMLP",
+   "gain_vs_best_single": 0.0
+  },
+  "hn": {
+   "single": {
+    "prev1": 1.1,
+    "saprev": 0.8,
+    "simmax": 4.0,
+    "PairMLP": 4.3
+   },
+   "routed_F1": 4.1,
+   "oracle_F1": 4.5,
+   "route_distribution": {
+    "prev1": 0,
+    "saprev": 0,
+    "simmax": 11,
+    "PairMLP": 4
+   },
+   "router": "logreg",
+   "gain_vs_best_single": -0.2
+  },
+  "reddit": {
+   "single": {
+    "prev1": 3.3,
+    "saprev": 0.8,
+    "simmax": 4.9,
+    "PairMLP": 5.4
+   },
+   "routed_F1": 6.4,
+   "oracle_F1": 6.7,
+   "route_distribution": {
+    "prev1": 0,
+    "saprev": 0,
+    "simmax": 14,
+    "PairMLP": 16
+   },
+   "router": "logreg",
+   "gain_vs_best_single": 1.0
+  }
+ }
+}
