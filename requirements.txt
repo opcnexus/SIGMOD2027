@@ -1,0 +1,21 @@
+# RepSpace artifact -- runtime environment
+#
+# Reproducing the paper's TABLES (scripts/make_paper_tables.py) requires the
+# standard library only. The packages below are needed to re-run the full pipeline.
+
+# --- numerics and data ---
+numpy>=1.24
+pandas>=1.5
+scikit-learn>=1.2          # linear classifier for platform discriminability
+openpyxl>=3.1              # xlsx export
+
+# --- probes and transfer experiments (CPU/MPS is enough, no discrete GPU) ---
+torch>=2.0                 # MHA-Net / PairMLP probes; use the mps backend on Apple Silicon
+transformers>=4.30         # only the semantic probe (DistilBERT) needs this
+tokenizers>=0.13
+sentencepiece>=0.1
+
+# --- LLM event-chain backtracking (optional) ---
+# The scripts call an OpenAI-compatible endpoint directly via urllib, no SDK needed.
+# If you prefer the official SDK:
+# openai>=1.30
