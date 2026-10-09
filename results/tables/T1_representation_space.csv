@@ -1,0 +1,7 @@
+platform,n_msg,n_conv,median_msgs_per_conv,median_participants,median_gap_sec,mention_rate_pct,root_pct
+irc,49765,100,1500.0,126.0,60,0.0,28.05
+molweni,88303,10000,8.0,3.0,,0.0,11.4
+discord,58420,85,101,19,511,0.0,82.93
+slack,80187,49,1527,35,27,9.9,
+hn,136327,120,958.0,563.0,1972,0.0,0.09
+reddit,62224,640,61.0,42.0,41,0.0,1.07
