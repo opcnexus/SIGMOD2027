@@ -1,0 +1,1752 @@
+{
+ "D1_conversation|M01_event_extraction": {
+  "dataset": "D1_conversation",
+  "method": "M01_event_extraction",
+  "style": "1to1",
+  "paper": "2025-arXiv2025-Event-Extraction-LLM.pdf",
+  "edge_precision": 0.925,
+  "edge_recall": 0.8061,
+  "edge_f1": 0.8608,
+  "edge_acc": 0.8232,
+  "chain_EM": 0.7308,
+  "chain_f1": 0.9099,
+  "gap": 0.0925,
+  "prefix_acc": {
+   "1": 0.8077,
+   "2": 0.7697,
+   "3": 0.7546
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.8333333333333334
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.5454545454545454
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.625
+   }
+  ]
+ },
+ "D2_eventstoryline|M01_event_extraction": {
+  "dataset": "D2_eventstoryline",
+  "method": "M01_event_extraction",
+  "style": "1to1",
+  "paper": "2025-arXiv2025-Event-Extraction-LLM.pdf",
+  "edge_precision": 0.7333,
+  "edge_recall": 0.619,
+  "edge_f1": 0.6667,
+  "edge_acc": 0.6667,
+  "chain_EM": 0.5926,
+  "chain_f1": 0.8444,
+  "gap": 0.0741,
+  "prefix_acc": {
+   "1": 0.5926,
+   "2": 0.4762,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M01_event_extraction": {
+  "dataset": "D3_provenance",
+  "method": "M01_event_extraction",
+  "style": "1to1",
+  "paper": "2025-arXiv2025-Event-Extraction-LLM.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8,
+  "edge_f1": 0.8571,
+  "edge_acc": 0.8333,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9281,
+  "gap": 0.0714,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M01_event_extraction": {
+  "dataset": "D4_cascade",
+  "method": "M01_event_extraction",
+  "style": "1to1",
+  "paper": "2025-arXiv2025-Event-Extraction-LLM.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8392,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M01_event_extraction": {
+  "dataset": "D5_agent_traj",
+  "method": "M01_event_extraction",
+  "style": "1to1",
+  "paper": "2025-arXiv2025-Event-Extraction-LLM.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8466,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.6095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M02_causal_micro": {
+  "dataset": "D1_conversation",
+  "method": "M02_causal_micro",
+  "style": "1to1",
+  "paper": "2024-arXiv2024-Causal-Micro-Narratives.pdf",
+  "edge_precision": 0.9213,
+  "edge_recall": 0.7758,
+  "edge_f1": 0.8417,
+  "edge_acc": 0.7652,
+  "chain_EM": 0.4359,
+  "chain_f1": 0.8629,
+  "gap": 0.3293,
+  "prefix_acc": {
+   "1": 0.5128,
+   "2": 0.4515,
+   "3": 0.4398
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.18181818181818182
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.375
+   }
+  ]
+ },
+ "D2_eventstoryline|M02_causal_micro": {
+  "dataset": "D2_eventstoryline",
+  "method": "M02_causal_micro",
+  "style": "1to1",
+  "paper": "2024-arXiv2024-Causal-Micro-Narratives.pdf",
+  "edge_precision": 0.8,
+  "edge_recall": 0.6667,
+  "edge_f1": 0.7222,
+  "edge_acc": 0.7083,
+  "chain_EM": 0.5926,
+  "chain_f1": 0.8506,
+  "gap": 0.1157,
+  "prefix_acc": {
+   "1": 0.5926,
+   "2": 0.4762,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M02_causal_micro": {
+  "dataset": "D3_provenance",
+  "method": "M02_causal_micro",
+  "style": "1to1",
+  "paper": "2024-arXiv2024-Causal-Micro-Narratives.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8667,
+  "edge_f1": 0.9167,
+  "edge_acc": 0.8889,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9424,
+  "gap": 0.127,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M02_causal_micro": {
+  "dataset": "D4_cascade",
+  "method": "M02_causal_micro",
+  "style": "1to1",
+  "paper": "2024-arXiv2024-Causal-Micro-Narratives.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8418,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M02_causal_micro": {
+  "dataset": "D5_agent_traj",
+  "method": "M02_causal_micro",
+  "style": "1to1",
+  "paper": "2024-arXiv2024-Causal-Micro-Narratives.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8397,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.5095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M03_eventweave": {
+  "dataset": "D1_conversation",
+  "method": "M03_eventweave",
+  "style": "chain",
+  "paper": "2025-arXiv2025-EventWeave.pdf",
+  "edge_precision": 0.9667,
+  "edge_recall": 0.8394,
+  "edge_f1": 0.8978,
+  "edge_acc": 0.8535,
+  "chain_EM": 0.7308,
+  "chain_f1": 0.9191,
+  "gap": 0.1228,
+  "prefix_acc": {
+   "1": 0.8077,
+   "2": 0.7697,
+   "3": 0.7546
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.8333333333333334
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.5454545454545454
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.625
+   }
+  ]
+ },
+ "D2_eventstoryline|M03_eventweave": {
+  "dataset": "D2_eventstoryline",
+  "method": "M03_eventweave",
+  "style": "chain",
+  "paper": "2025-arXiv2025-EventWeave.pdf",
+  "edge_precision": 0.9333,
+  "edge_recall": 0.7619,
+  "edge_f1": 0.8333,
+  "edge_acc": 0.7917,
+  "chain_EM": 0.6296,
+  "chain_f1": 0.8946,
+  "gap": 0.162,
+  "prefix_acc": {
+   "1": 0.7037,
+   "2": 0.619,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5833333333333334
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M03_eventweave": {
+  "dataset": "D3_provenance",
+  "method": "M03_eventweave",
+  "style": "chain",
+  "paper": "2025-arXiv2025-EventWeave.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8667,
+  "edge_f1": 0.9167,
+  "edge_acc": 0.8889,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9424,
+  "gap": 0.127,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M03_eventweave": {
+  "dataset": "D4_cascade",
+  "method": "M03_eventweave",
+  "style": "chain",
+  "paper": "2025-arXiv2025-EventWeave.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8418,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M03_eventweave": {
+  "dataset": "D5_agent_traj",
+  "method": "M03_eventweave",
+  "style": "chain",
+  "paper": "2025-arXiv2025-EventWeave.pdf",
+  "edge_precision": 0.7746,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7185,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8314,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6296,
+   "2": 0.5762,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M04_blackbox_forensics": {
+  "dataset": "D1_conversation",
+  "method": "M04_blackbox_forensics",
+  "style": "chain",
+  "paper": "2026-arXiv2026-BlackBox-Forensics-ConvAgent.pdf",
+  "edge_precision": 0.8296,
+  "edge_recall": 0.7727,
+  "edge_f1": 0.7997,
+  "edge_acc": 0.7626,
+  "chain_EM": 0.4252,
+  "chain_f1": 0.8627,
+  "gap": 0.3374,
+  "prefix_acc": {
+   "1": 0.7521,
+   "2": 0.603,
+   "3": 0.3796
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.18181818181818182
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.125
+   }
+  ]
+ },
+ "D2_eventstoryline|M04_blackbox_forensics": {
+  "dataset": "D2_eventstoryline",
+  "method": "M04_blackbox_forensics",
+  "style": "chain",
+  "paper": "2026-arXiv2026-BlackBox-Forensics-ConvAgent.pdf",
+  "edge_precision": 0.8,
+  "edge_recall": 0.6667,
+  "edge_f1": 0.7222,
+  "edge_acc": 0.7083,
+  "chain_EM": 0.5926,
+  "chain_f1": 0.8506,
+  "gap": 0.1157,
+  "prefix_acc": {
+   "1": 0.5926,
+   "2": 0.4762,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M04_blackbox_forensics": {
+  "dataset": "D3_provenance",
+  "method": "M04_blackbox_forensics",
+  "style": "chain",
+  "paper": "2026-arXiv2026-BlackBox-Forensics-ConvAgent.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8667,
+  "edge_f1": 0.9167,
+  "edge_acc": 0.8889,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9424,
+  "gap": 0.127,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M04_blackbox_forensics": {
+  "dataset": "D4_cascade",
+  "method": "M04_blackbox_forensics",
+  "style": "chain",
+  "paper": "2026-arXiv2026-BlackBox-Forensics-ConvAgent.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8392,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M04_blackbox_forensics": {
+  "dataset": "D5_agent_traj",
+  "method": "M04_blackbox_forensics",
+  "style": "chain",
+  "paper": "2026-arXiv2026-BlackBox-Forensics-ConvAgent.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8392,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.5095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M05_reflexion": {
+  "dataset": "D1_conversation",
+  "method": "M05_reflexion",
+  "style": "1to1",
+  "paper": "2023-NeurIPS2023-Reflexion.pdf",
+  "edge_precision": 0.8926,
+  "edge_recall": 0.8061,
+  "edge_f1": 0.8471,
+  "edge_acc": 0.7929,
+  "chain_EM": 0.5641,
+  "chain_f1": 0.8717,
+  "gap": 0.2288,
+  "prefix_acc": {
+   "1": 0.641,
+   "2": 0.603,
+   "3": 0.588
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.36363636363636365
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.5
+   }
+  ]
+ },
+ "D2_eventstoryline|M05_reflexion": {
+  "dataset": "D2_eventstoryline",
+  "method": "M05_reflexion",
+  "style": "1to1",
+  "paper": "2023-NeurIPS2023-Reflexion.pdf",
+  "edge_precision": 0.8667,
+  "edge_recall": 0.7143,
+  "edge_f1": 0.7778,
+  "edge_acc": 0.75,
+  "chain_EM": 0.6296,
+  "chain_f1": 0.8879,
+  "gap": 0.1204,
+  "prefix_acc": {
+   "1": 0.7037,
+   "2": 0.619,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5833333333333334
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M05_reflexion": {
+  "dataset": "D3_provenance",
+  "method": "M05_reflexion",
+  "style": "1to1",
+  "paper": "2023-NeurIPS2023-Reflexion.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8667,
+  "edge_f1": 0.9167,
+  "edge_acc": 0.8889,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9424,
+  "gap": 0.127,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M05_reflexion": {
+  "dataset": "D4_cascade",
+  "method": "M05_reflexion",
+  "style": "1to1",
+  "paper": "2023-NeurIPS2023-Reflexion.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8455,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M05_reflexion": {
+  "dataset": "D5_agent_traj",
+  "method": "M05_reflexion",
+  "style": "1to1",
+  "paper": "2023-NeurIPS2023-Reflexion.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8471,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.6095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M06_expel": {
+  "dataset": "D1_conversation",
+  "method": "M06_expel",
+  "style": "1to1",
+  "paper": "2023-EMNLP2023-ExpeL.pdf",
+  "edge_precision": 0.8926,
+  "edge_recall": 0.8061,
+  "edge_f1": 0.8471,
+  "edge_acc": 0.7929,
+  "chain_EM": 0.5641,
+  "chain_f1": 0.8717,
+  "gap": 0.2288,
+  "prefix_acc": {
+   "1": 0.641,
+   "2": 0.603,
+   "3": 0.588
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.36363636363636365
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.5
+   }
+  ]
+ },
+ "D2_eventstoryline|M06_expel": {
+  "dataset": "D2_eventstoryline",
+  "method": "M06_expel",
+  "style": "1to1",
+  "paper": "2023-EMNLP2023-ExpeL.pdf",
+  "edge_precision": 0.8,
+  "edge_recall": 0.6667,
+  "edge_f1": 0.7222,
+  "edge_acc": 0.7083,
+  "chain_EM": 0.5926,
+  "chain_f1": 0.8506,
+  "gap": 0.1157,
+  "prefix_acc": {
+   "1": 0.5926,
+   "2": 0.4762,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M06_expel": {
+  "dataset": "D3_provenance",
+  "method": "M06_expel",
+  "style": "1to1",
+  "paper": "2023-EMNLP2023-ExpeL.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8667,
+  "edge_f1": 0.9167,
+  "edge_acc": 0.8889,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9424,
+  "gap": 0.127,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M06_expel": {
+  "dataset": "D4_cascade",
+  "method": "M06_expel",
+  "style": "1to1",
+  "paper": "2023-EMNLP2023-ExpeL.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8392,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M06_expel": {
+  "dataset": "D5_agent_traj",
+  "method": "M06_expel",
+  "style": "1to1",
+  "paper": "2023-EMNLP2023-ExpeL.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8466,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.6095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M07_lats": {
+  "dataset": "D1_conversation",
+  "method": "M07_lats",
+  "style": "chain",
+  "paper": "2023-ICLR2024-LATS.pdf",
+  "edge_precision": 0.9296,
+  "edge_recall": 0.8394,
+  "edge_f1": 0.8822,
+  "edge_acc": 0.8535,
+  "chain_EM": 0.7308,
+  "chain_f1": 0.8955,
+  "gap": 0.1228,
+  "prefix_acc": {
+   "1": 0.8077,
+   "2": 0.7697,
+   "3": 0.7546
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.8333333333333334
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.5454545454545454
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.625
+   }
+  ]
+ },
+ "D2_eventstoryline|M07_lats": {
+  "dataset": "D2_eventstoryline",
+  "method": "M07_lats",
+  "style": "chain",
+  "paper": "2023-ICLR2024-LATS.pdf",
+  "edge_precision": 0.8667,
+  "edge_recall": 0.7143,
+  "edge_f1": 0.7778,
+  "edge_acc": 0.75,
+  "chain_EM": 0.6296,
+  "chain_f1": 0.8879,
+  "gap": 0.1204,
+  "prefix_acc": {
+   "1": 0.7037,
+   "2": 0.619,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5833333333333334
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M07_lats": {
+  "dataset": "D3_provenance",
+  "method": "M07_lats",
+  "style": "chain",
+  "paper": "2023-ICLR2024-LATS.pdf",
+  "edge_precision": 0.963,
+  "edge_recall": 0.8296,
+  "edge_f1": 0.8796,
+  "edge_acc": 0.8556,
+  "chain_EM": 0.5498,
+  "chain_f1": 0.8903,
+  "gap": 0.3058,
+  "prefix_acc": {
+   "1": 0.5498,
+   "2": 0.4074,
+   "3": 0.381
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 0.0
+   }
+  ]
+ },
+ "D4_cascade|M07_lats": {
+  "dataset": "D4_cascade",
+  "method": "M07_lats",
+  "style": "chain",
+  "paper": "2023-ICLR2024-LATS.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8418,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M07_lats": {
+  "dataset": "D5_agent_traj",
+  "method": "M07_lats",
+  "style": "chain",
+  "paper": "2023-ICLR2024-LATS.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8397,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.5095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M08_ananke": {
+  "dataset": "D1_conversation",
+  "method": "M08_ananke",
+  "style": "chain",
+  "paper": "2025-arXiv2025-Ananke.pdf",
+  "edge_precision": 0.9153,
+  "edge_recall": 0.7091,
+  "edge_f1": 0.7983,
+  "edge_acc": 0.7348,
+  "chain_EM": 0.4081,
+  "chain_f1": 0.8482,
+  "gap": 0.3267,
+  "prefix_acc": {
+   "1": 0.485,
+   "2": 0.3848,
+   "3": 0.3981
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.3333333333333333
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.18181818181818182
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.375
+   }
+  ]
+ },
+ "D2_eventstoryline|M08_ananke": {
+  "dataset": "D2_eventstoryline",
+  "method": "M08_ananke",
+  "style": "chain",
+  "paper": "2025-arXiv2025-Ananke.pdf",
+  "edge_precision": 0.8667,
+  "edge_recall": 0.6726,
+  "edge_f1": 0.7556,
+  "edge_acc": 0.713,
+  "chain_EM": 0.563,
+  "chain_f1": 0.8702,
+  "gap": 0.15,
+  "prefix_acc": {
+   "1": 0.637,
+   "2": 0.5357,
+   "3": 0.4111
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.4166666666666667
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M08_ananke": {
+  "dataset": "D3_provenance",
+  "method": "M08_ananke",
+  "style": "chain",
+  "paper": "2025-arXiv2025-Ananke.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.763,
+  "edge_f1": 0.86,
+  "edge_acc": 0.8,
+  "chain_EM": 0.4069,
+  "chain_f1": 0.8792,
+  "gap": 0.3931,
+  "prefix_acc": {
+   "1": 0.4069,
+   "2": 0.2074,
+   "3": 0.1587
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.3333333333333333
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 0.0
+   }
+  ]
+ },
+ "D4_cascade|M08_ananke": {
+  "dataset": "D4_cascade",
+  "method": "M08_ananke",
+  "style": "chain",
+  "paper": "2025-arXiv2025-Ananke.pdf",
+  "edge_precision": 0.4583,
+  "edge_recall": 0.3262,
+  "edge_f1": 0.3761,
+  "edge_acc": 0.399,
+  "chain_EM": 0.3222,
+  "chain_f1": 0.7614,
+  "gap": 0.0768,
+  "prefix_acc": {
+   "1": 0.5222,
+   "2": 0.156,
+   "3": 0.0833
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.2
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M08_ananke": {
+  "dataset": "D5_agent_traj",
+  "method": "M08_ananke",
+  "style": "chain",
+  "paper": "2025-arXiv2025-Ananke.pdf",
+  "edge_precision": 0.7296,
+  "edge_recall": 0.5952,
+  "edge_f1": 0.6541,
+  "edge_acc": 0.6098,
+  "chain_EM": 0.287,
+  "chain_f1": 0.8007,
+  "gap": 0.3228,
+  "prefix_acc": {
+   "1": 0.3981,
+   "2": 0.2857,
+   "3": 0.0667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.25
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M09_trace2attck": {
+  "dataset": "D1_conversation",
+  "method": "M09_trace2attck",
+  "style": "chain",
+  "paper": "2026-arXiv2026-Trace2ATT&CK.pdf",
+  "edge_precision": 0.8926,
+  "edge_recall": 0.8061,
+  "edge_f1": 0.8471,
+  "edge_acc": 0.8232,
+  "chain_EM": 0.5919,
+  "chain_f1": 0.8855,
+  "gap": 0.2314,
+  "prefix_acc": {
+   "1": 0.7799,
+   "2": 0.603,
+   "3": 0.588
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.36363636363636365
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.5
+   }
+  ]
+ },
+ "D2_eventstoryline|M09_trace2attck": {
+  "dataset": "D2_eventstoryline",
+  "method": "M09_trace2attck",
+  "style": "chain",
+  "paper": "2026-arXiv2026-Trace2ATT&CK.pdf",
+  "edge_precision": 0.8,
+  "edge_recall": 0.6667,
+  "edge_f1": 0.7222,
+  "edge_acc": 0.7083,
+  "chain_EM": 0.5926,
+  "chain_f1": 0.8506,
+  "gap": 0.1157,
+  "prefix_acc": {
+   "1": 0.5926,
+   "2": 0.4762,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M09_trace2attck": {
+  "dataset": "D3_provenance",
+  "method": "M09_trace2attck",
+  "style": "chain",
+  "paper": "2026-arXiv2026-Trace2ATT&CK.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8667,
+  "edge_f1": 0.9167,
+  "edge_acc": 0.8889,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9424,
+  "gap": 0.127,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M09_trace2attck": {
+  "dataset": "D4_cascade",
+  "method": "M09_trace2attck",
+  "style": "chain",
+  "paper": "2026-arXiv2026-Trace2ATT&CK.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8392,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M09_trace2attck": {
+  "dataset": "D5_agent_traj",
+  "method": "M09_trace2attck",
+  "style": "chain",
+  "paper": "2026-arXiv2026-Trace2ATT&CK.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8397,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.5095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ },
+ "D1_conversation|M10_cascade_inference": {
+  "dataset": "D1_conversation",
+  "method": "M10_cascade_inference",
+  "style": "chain",
+  "paper": "2024-arXiv2024-Cascade-Inference-Problem.pdf",
+  "edge_precision": 0.925,
+  "edge_recall": 0.8061,
+  "edge_f1": 0.8608,
+  "edge_acc": 0.8232,
+  "chain_EM": 0.5919,
+  "chain_f1": 0.8809,
+  "gap": 0.2314,
+  "prefix_acc": {
+   "1": 0.6688,
+   "2": 0.603,
+   "3": 0.588
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 11,
+    "em": 0.36363636363636365
+   },
+   {
+    "bucket": "6-8",
+    "n": 8,
+    "em": 0.5
+   }
+  ]
+ },
+ "D2_eventstoryline|M10_cascade_inference": {
+  "dataset": "D2_eventstoryline",
+  "method": "M10_cascade_inference",
+  "style": "chain",
+  "paper": "2024-arXiv2024-Cascade-Inference-Problem.pdf",
+  "edge_precision": 0.8,
+  "edge_recall": 0.6667,
+  "edge_f1": 0.7222,
+  "edge_acc": 0.7083,
+  "chain_EM": 0.5926,
+  "chain_f1": 0.8353,
+  "gap": 0.1157,
+  "prefix_acc": {
+   "1": 0.5926,
+   "2": 0.4762,
+   "3": 0.4667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.375
+   },
+   {
+    "bucket": "6-8",
+    "n": 2,
+    "em": 1.0
+   }
+  ]
+ },
+ "D3_provenance|M10_cascade_inference": {
+  "dataset": "D3_provenance",
+  "method": "M10_cascade_inference",
+  "style": "chain",
+  "paper": "2024-arXiv2024-Cascade-Inference-Problem.pdf",
+  "edge_precision": 1.0,
+  "edge_recall": 0.8667,
+  "edge_f1": 0.9167,
+  "edge_acc": 0.8889,
+  "chain_EM": 0.7619,
+  "chain_f1": 0.9424,
+  "gap": 0.127,
+  "prefix_acc": {
+   "1": 0.7619,
+   "2": 0.6667,
+   "3": 0.6667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.6666666666666666
+   },
+   {
+    "bucket": "4-5",
+    "n": 4,
+    "em": 0.75
+   },
+   {
+    "bucket": "6-8",
+    "n": 3,
+    "em": 1.0
+   }
+  ]
+ },
+ "D4_cascade|M10_cascade_inference": {
+  "dataset": "D4_cascade",
+  "method": "M10_cascade_inference",
+  "style": "chain",
+  "paper": "2024-arXiv2024-Cascade-Inference-Problem.pdf",
+  "edge_precision": 0.472,
+  "edge_recall": 0.4071,
+  "edge_f1": 0.4334,
+  "edge_acc": 0.471,
+  "chain_EM": 0.4241,
+  "chain_f1": 0.8392,
+  "gap": 0.0469,
+  "prefix_acc": {
+   "1": 0.8722,
+   "2": 0.4321,
+   "3": 0.1667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 20,
+    "em": 0.35
+   },
+   {
+    "bucket": "4-5",
+    "n": 5,
+    "em": 0.0
+   },
+   {
+    "bucket": "6-8",
+    "n": 0,
+    "em": null
+   }
+  ]
+ },
+ "D5_agent_traj|M10_cascade_inference": {
+  "dataset": "D5_agent_traj",
+  "method": "M10_cascade_inference",
+  "style": "chain",
+  "paper": "2024-arXiv2024-Cascade-Inference-Problem.pdf",
+  "edge_precision": 0.7524,
+  "edge_recall": 0.6762,
+  "edge_f1": 0.7079,
+  "edge_acc": 0.6818,
+  "chain_EM": 0.463,
+  "chain_f1": 0.8466,
+  "gap": 0.2189,
+  "prefix_acc": {
+   "1": 0.6574,
+   "2": 0.6095,
+   "3": 0.2667
+  },
+  "len_stratified": [
+   {
+    "bucket": "2-3",
+    "n": 12,
+    "em": 0.5
+   },
+   {
+    "bucket": "4-5",
+    "n": 8,
+    "em": 0.25
+   },
+   {
+    "bucket": "6-8",
+    "n": 4,
+    "em": 0.0
+   }
+  ]
+ }
+}

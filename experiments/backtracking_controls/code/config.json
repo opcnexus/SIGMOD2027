@@ -1,0 +1,61 @@
+{
+  "project": "dialogue-backtracking-repro",
+  "seed": 20261002,
+  "purpose": "Reproduce 10 full-chain backtracking algorithms and validate them on 5 datasets (real DeepSeek API run)",
+  "llm": {
+    "backend": "api",
+    "model": "deepseek-chat",
+    "temperature": 0.7,
+    "mock_edge_accuracy": 0.9,
+    "workers": 8,
+    "note": "api = DeepSeek / OpenAI-compatible endpoint; the key is supplied through the OPENAI_API_KEY or DEEPSEEK_API_KEY environment variable and is never committed"
+  },
+  "small_batch": {
+    "instances_per_dataset": 3,
+    "chains_per_instance": 2,
+    "chain_len_range": [
+      3,
+      8
+    ]
+  },
+  "datasets": [
+    "D1_conversation",
+    "D2_eventstoryline",
+    "D3_provenance",
+    "D4_cascade",
+    "D5_agent_traj"
+  ],
+  "methods": [
+    "M01_event_extraction",
+    "M02_causal_micro",
+    "M03_eventweave",
+    "M04_blackbox_forensics",
+    "M05_reflexion",
+    "M06_expel",
+    "M07_lats",
+    "M08_ananke",
+    "M09_trace2attck",
+    "M10_cascade_inference"
+  ],
+  "eval": {
+    "prefix_k": [
+      1,
+      2,
+      3
+    ],
+    "len_buckets": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        8
+      ]
+    ]
+  }
+}
