@@ -1,0 +1,53 @@
+{
+ "dataset": "molweni",
+ "algorithm": "PairMLP",
+ "seed": 43,
+ "metrics": {
+  "link": {
+   "P": 74.5,
+   "R": 76.0,
+   "F1": 75.3
+  },
+  "root": {
+   "P": 97.6,
+   "R": 100.0,
+   "F1": 98.8
+  },
+  "cats": {
+   "1-1": {
+    "P": 74.7,
+    "R": 89.2,
+    "F1": 81.3
+   },
+   "1-many": {
+    "P": 77.6,
+    "R": 63.5,
+    "F1": 69.8
+   },
+   "many-1": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0
+   },
+   "many-many": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0
+   }
+  },
+  "unidentified_pct": 24.0,
+  "hallucination_pct": 25.5,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.885,
+  "density_pred": 0.903,
+  "coverage_pct": 88.8,
+  "n_scored_msgs": 1786,
+  "tp": 1202,
+  "fp": 411,
+  "fn": 379
+ },
+ "saved_at": "2026-09-26 19:11",
+ "runtime_seconds_total": 12568
+}

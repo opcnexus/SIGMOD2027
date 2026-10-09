@@ -1,0 +1,48 @@
+{
+ "dataset": "slack",
+ "algorithm": "prev1",
+ "seed": 0,
+ "metrics": {
+  "link": {
+   "P": 1.7,
+   "R": 15.4,
+   "F1": 3.1
+  },
+  "root": {
+   "P": 0.1,
+   "R": 100.0,
+   "F1": 0.2
+  },
+  "cats": {
+   "1-1": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0
+   },
+   "1-many": {
+    "P": 100.0,
+    "R": 15.8,
+    "F1": 27.2
+   },
+   "many-many": {
+    "P": 100.0,
+    "R": 10.6,
+    "F1": 19.2
+   }
+  },
+  "unidentified_pct": 84.6,
+  "hallucination_pct": 98.3,
+  "multi_parent_recall": 10.8,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.113,
+  "density_pred": 0.999,
+  "coverage_pct": 99.9,
+  "n_scored_msgs": 27600,
+  "tp": 482,
+  "fp": 27095,
+  "fn": 2648
+ },
+ "saved_at": "2026-09-26 20:08",
+ "runtime_seconds_total": 16037
+}

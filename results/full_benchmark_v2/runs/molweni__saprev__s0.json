@@ -1,0 +1,43 @@
+{
+ "dataset": "molweni",
+ "algorithm": "saprev",
+ "seed": 0,
+ "metrics": {
+  "link": {
+   "P": 24.3,
+   "R": 24.4,
+   "F1": 24.3
+  },
+  "root": {
+   "P": 97.6,
+   "R": 100.0,
+   "F1": 98.8
+  },
+  "cats": {
+   "1-1": {
+    "P": 22.7,
+    "R": 32.6,
+    "F1": 26.7
+   },
+   "1-many": {
+    "P": 28.0,
+    "R": 16.5,
+    "F1": 20.8
+   }
+  },
+  "unidentified_pct": 75.6,
+  "hallucination_pct": 75.7,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.885,
+  "density_pred": 0.888,
+  "coverage_pct": 88.8,
+  "n_scored_msgs": 1786,
+  "tp": 385,
+  "fp": 1201,
+  "fn": 1196
+ },
+ "saved_at": "2026-09-26 19:09",
+ "runtime_seconds_total": 12498
+}

@@ -1,0 +1,31 @@
+{
+ "seeds": [
+  42,
+  43,
+  44,
+  45,
+  46
+ ],
+ "algorithms": [
+  "prev1",
+  "saprev",
+  "simmax",
+  "PairMLP",
+  "MHA-Net"
+ ],
+ "config": {
+  "W": 100,
+  "max_msgs": 1200,
+  "epochs": 12,
+  "patience": 3,
+  "split_seed": 42,
+  "model_seeds": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "protocol": "identical to full_benchmark v1; per-combo disk ckpt; neural = mean over seeds"
+ }
+}

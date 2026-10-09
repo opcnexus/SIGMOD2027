@@ -1,0 +1,43 @@
+{
+ "dataset": "reddit",
+ "algorithm": "MHA-Net",
+ "seed": 44,
+ "metrics": {
+  "link": {
+   "P": 3.5,
+   "R": 6.4,
+   "F1": 4.5
+  },
+  "root": {
+   "P": 1.0,
+   "R": 100.0,
+   "F1": 2.0
+  },
+  "cats": {
+   "1-1": {
+    "P": 5.9,
+    "R": 9.7,
+    "F1": 7.3
+   },
+   "1-many": {
+    "P": 2.1,
+    "R": 4.2,
+    "F1": 2.8
+   }
+  },
+  "unidentified_pct": 93.6,
+  "hallucination_pct": 96.5,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.545,
+  "density_pred": 0.995,
+  "coverage_pct": 99.5,
+  "n_scored_msgs": 6441,
+  "tp": 225,
+  "fp": 6186,
+  "fn": 3283
+ },
+ "saved_at": "2026-09-27 06:14",
+ "runtime_seconds_total": 52384
+}

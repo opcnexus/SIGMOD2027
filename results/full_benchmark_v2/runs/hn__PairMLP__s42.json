@@ -1,0 +1,43 @@
+{
+ "dataset": "hn",
+ "algorithm": "PairMLP",
+ "seed": 42,
+ "metrics": {
+  "link": {
+   "P": 2.2,
+   "R": 5.1,
+   "F1": 3.0
+  },
+  "root": {
+   "P": 0.2,
+   "R": 100.0,
+   "F1": 0.4
+  },
+  "cats": {
+   "1-1": {
+    "P": 3.0,
+    "R": 6.1,
+    "F1": 4.1
+   },
+   "1-many": {
+    "P": 1.7,
+    "R": 4.3,
+    "F1": 2.4
+   }
+  },
+  "unidentified_pct": 94.9,
+  "hallucination_pct": 97.8,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.426,
+  "density_pred": 0.999,
+  "coverage_pct": 99.9,
+  "n_scored_msgs": 11711,
+  "tp": 253,
+  "fp": 11443,
+  "fn": 4738
+ },
+ "saved_at": "2026-09-26 22:21",
+ "runtime_seconds_total": 23977
+}

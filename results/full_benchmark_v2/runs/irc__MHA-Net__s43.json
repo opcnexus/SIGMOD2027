@@ -1,0 +1,53 @@
+{
+ "dataset": "irc",
+ "algorithm": "MHA-Net",
+ "seed": 43,
+ "metrics": {
+  "link": {
+   "P": 24.5,
+   "R": 28.2,
+   "F1": 26.2
+  },
+  "root": {
+   "P": 1.6,
+   "R": 100.0,
+   "F1": 3.2
+  },
+  "cats": {
+   "1-1": {
+    "P": 31.6,
+    "R": 33.3,
+    "F1": 32.4
+   },
+   "1-many": {
+    "P": 16.3,
+    "R": 23.3,
+    "F1": 19.2
+   },
+   "many-1": {
+    "P": 97.5,
+    "R": 33.5,
+    "F1": 49.9
+   },
+   "many-many": {
+    "P": 48.1,
+    "R": 10.7,
+    "F1": 17.5
+   }
+  },
+  "unidentified_pct": 71.8,
+  "hallucination_pct": 75.5,
+  "multi_parent_recall": 20.2,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.869,
+  "density_pred": 1.002,
+  "coverage_pct": 99.7,
+  "n_scored_msgs": 13017,
+  "tp": 3194,
+  "fp": 9845,
+  "fn": 8120
+ },
+ "saved_at": "2026-09-26 17:48",
+ "runtime_seconds_total": 7617
+}

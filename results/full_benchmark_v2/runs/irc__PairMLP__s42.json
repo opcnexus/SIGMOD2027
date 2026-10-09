@@ -1,0 +1,53 @@
+{
+ "dataset": "irc",
+ "algorithm": "PairMLP",
+ "seed": 42,
+ "metrics": {
+  "link": {
+   "P": 24.0,
+   "R": 27.5,
+   "F1": 25.6
+  },
+  "root": {
+   "P": 1.6,
+   "R": 100.0,
+   "F1": 3.2
+  },
+  "cats": {
+   "1-1": {
+    "P": 28.5,
+    "R": 32.6,
+    "F1": 30.4
+   },
+   "1-many": {
+    "P": 16.9,
+    "R": 22.3,
+    "F1": 19.2
+   },
+   "many-1": {
+    "P": 100.0,
+    "R": 33.8,
+    "F1": 50.5
+   },
+   "many-many": {
+    "P": 100.0,
+    "R": 12.7,
+    "F1": 22.6
+   }
+  },
+  "unidentified_pct": 72.5,
+  "hallucination_pct": 76.0,
+  "multi_parent_recall": 21.5,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.869,
+  "density_pred": 0.997,
+  "coverage_pct": 99.7,
+  "n_scored_msgs": 13017,
+  "tp": 3114,
+  "fp": 9868,
+  "fn": 8200
+ },
+ "saved_at": "2026-09-26 15:50",
+ "runtime_seconds_total": 534
+}

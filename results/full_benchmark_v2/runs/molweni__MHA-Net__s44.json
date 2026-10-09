@@ -1,0 +1,43 @@
+{
+ "dataset": "molweni",
+ "algorithm": "MHA-Net",
+ "seed": 44,
+ "metrics": {
+  "link": {
+   "P": 74.5,
+   "R": 74.8,
+   "F1": 74.6
+  },
+  "root": {
+   "P": 97.6,
+   "R": 100.0,
+   "F1": 98.8
+  },
+  "cats": {
+   "1-1": {
+    "P": 71.8,
+    "R": 89.0,
+    "F1": 79.5
+   },
+   "1-many": {
+    "P": 78.6,
+    "R": 61.2,
+    "F1": 68.8
+   }
+  },
+  "unidentified_pct": 25.2,
+  "hallucination_pct": 25.5,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.885,
+  "density_pred": 0.888,
+  "coverage_pct": 88.8,
+  "n_scored_msgs": 1786,
+  "tp": 1182,
+  "fp": 404,
+  "fn": 399
+ },
+ "saved_at": "2026-09-26 19:21",
+ "runtime_seconds_total": 13192
+}

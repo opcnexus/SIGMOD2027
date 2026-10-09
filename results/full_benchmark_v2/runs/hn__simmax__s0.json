@@ -1,0 +1,43 @@
+{
+ "dataset": "hn",
+ "algorithm": "simmax",
+ "seed": 0,
+ "metrics": {
+  "link": {
+   "P": 2.9,
+   "R": 6.7,
+   "F1": 4.0
+  },
+  "root": {
+   "P": 0.2,
+   "R": 100.0,
+   "F1": 0.4
+  },
+  "cats": {
+   "1-1": {
+    "P": 4.0,
+    "R": 6.8,
+    "F1": 5.0
+   },
+   "1-many": {
+    "P": 2.3,
+    "R": 6.6,
+    "F1": 3.5
+   }
+  },
+  "unidentified_pct": 93.3,
+  "hallucination_pct": 97.1,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.426,
+  "density_pred": 0.999,
+  "coverage_pct": 99.9,
+  "n_scored_msgs": 11711,
+  "tp": 334,
+  "fp": 11362,
+  "fn": 4657
+ },
+ "saved_at": "2026-09-26 22:09",
+ "runtime_seconds_total": 23288
+}

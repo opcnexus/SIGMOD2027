@@ -1,0 +1,43 @@
+{
+ "dataset": "hn",
+ "algorithm": "prev1",
+ "seed": 0,
+ "metrics": {
+  "link": {
+   "P": 0.8,
+   "R": 1.8,
+   "F1": 1.1
+  },
+  "root": {
+   "P": 0.2,
+   "R": 100.0,
+   "F1": 0.4
+  },
+  "cats": {
+   "1-1": {
+    "P": 0.5,
+    "R": 2.6,
+    "F1": 0.8
+   },
+   "1-many": {
+    "P": 100.0,
+    "R": 1.2,
+    "F1": 2.3
+   }
+  },
+  "unidentified_pct": 98.2,
+  "hallucination_pct": 99.2,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.426,
+  "density_pred": 0.999,
+  "coverage_pct": 99.9,
+  "n_scored_msgs": 11711,
+  "tp": 88,
+  "fp": 11608,
+  "fn": 4903
+ },
+ "saved_at": "2026-09-26 22:09",
+ "runtime_seconds_total": 23280
+}

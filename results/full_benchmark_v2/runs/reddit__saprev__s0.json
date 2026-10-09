@@ -1,0 +1,43 @@
+{
+ "dataset": "reddit",
+ "algorithm": "saprev",
+ "seed": 0,
+ "metrics": {
+  "link": {
+   "P": 0.6,
+   "R": 1.1,
+   "F1": 0.8
+  },
+  "root": {
+   "P": 1.0,
+   "R": 100.0,
+   "F1": 2.0
+  },
+  "cats": {
+   "1-1": {
+    "P": 0.2,
+    "R": 0.7,
+    "F1": 0.4
+   },
+   "1-many": {
+    "P": 1.3,
+    "R": 1.4,
+    "F1": 1.3
+   }
+  },
+  "unidentified_pct": 98.9,
+  "hallucination_pct": 99.4,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.545,
+  "density_pred": 0.995,
+  "coverage_pct": 99.5,
+  "n_scored_msgs": 6441,
+  "tp": 38,
+  "fp": 6373,
+  "fn": 3470
+ },
+ "saved_at": "2026-09-27 05:16",
+ "runtime_seconds_total": 48896
+}

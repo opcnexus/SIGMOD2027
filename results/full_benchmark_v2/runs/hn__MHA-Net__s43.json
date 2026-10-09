@@ -1,0 +1,43 @@
+{
+ "dataset": "hn",
+ "algorithm": "MHA-Net",
+ "seed": 43,
+ "metrics": {
+  "link": {
+   "P": 1.4,
+   "R": 3.2,
+   "F1": 1.9
+  },
+  "root": {
+   "P": 0.2,
+   "R": 100.0,
+   "F1": 0.4
+  },
+  "cats": {
+   "1-1": {
+    "P": 1.9,
+    "R": 3.9,
+    "F1": 2.6
+   },
+   "1-many": {
+    "P": 1.1,
+    "R": 2.8,
+    "F1": 1.5
+   }
+  },
+  "unidentified_pct": 96.8,
+  "hallucination_pct": 98.6,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.426,
+  "density_pred": 0.999,
+  "coverage_pct": 99.9,
+  "n_scored_msgs": 11711,
+  "tp": 162,
+  "fp": 11534,
+  "fn": 4829
+ },
+ "saved_at": "2026-09-27 01:29",
+ "runtime_seconds_total": 35265
+}

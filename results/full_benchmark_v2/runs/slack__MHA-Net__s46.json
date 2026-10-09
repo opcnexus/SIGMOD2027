@@ -1,0 +1,48 @@
+{
+ "dataset": "slack",
+ "algorithm": "MHA-Net",
+ "seed": 46,
+ "metrics": {
+  "link": {
+   "P": 6.3,
+   "R": 55.3,
+   "F1": 11.3
+  },
+  "root": {
+   "P": 0.1,
+   "R": 100.0,
+   "F1": 0.2
+  },
+  "cats": {
+   "1-1": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0
+   },
+   "1-many": {
+    "P": 6.0,
+    "R": 56.8,
+    "F1": 10.9
+   },
+   "many-many": {
+    "P": 100.0,
+    "R": 35.6,
+    "F1": 52.6
+   }
+  },
+  "unidentified_pct": 44.7,
+  "hallucination_pct": 93.7,
+  "multi_parent_recall": 36.0,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.113,
+  "density_pred": 0.999,
+  "coverage_pct": 99.9,
+  "n_scored_msgs": 27600,
+  "tp": 1732,
+  "fp": 25845,
+  "fn": 1398
+ },
+ "saved_at": "2026-09-26 22:09",
+ "runtime_seconds_total": 23273
+}

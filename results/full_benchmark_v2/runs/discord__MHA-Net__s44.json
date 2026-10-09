@@ -1,0 +1,43 @@
+{
+ "dataset": "discord",
+ "algorithm": "MHA-Net",
+ "seed": 44,
+ "metrics": {
+  "link": {
+   "P": 30.7,
+   "R": 76.2,
+   "F1": 43.8
+  },
+  "root": {
+   "P": 4.7,
+   "R": 100.0,
+   "F1": 9.0
+  },
+  "cats": {
+   "1-1": {
+    "P": 38.5,
+    "R": 80.8,
+    "F1": 52.2
+   },
+   "1-many": {
+    "P": 13.6,
+    "R": 56.2,
+    "F1": 21.9
+   }
+  },
+  "unidentified_pct": 23.8,
+  "hallucination_pct": 69.3,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.392,
+  "density_pred": 0.971,
+  "coverage_pct": 97.1,
+  "n_scored_msgs": 2733,
+  "tp": 816,
+  "fp": 1839,
+  "fn": 255
+ },
+ "saved_at": "2026-09-26 20:00",
+ "runtime_seconds_total": 15506
+}

@@ -1,0 +1,43 @@
+{
+ "dataset": "reddit",
+ "algorithm": "PairMLP",
+ "seed": 46,
+ "metrics": {
+  "link": {
+   "P": 4.0,
+   "R": 7.4,
+   "F1": 5.2
+  },
+  "root": {
+   "P": 1.0,
+   "R": 100.0,
+   "F1": 2.0
+  },
+  "cats": {
+   "1-1": {
+    "P": 5.4,
+    "R": 11.4,
+    "F1": 7.4
+   },
+   "1-many": {
+    "P": 2.8,
+    "R": 4.6,
+    "F1": 3.5
+   }
+  },
+  "unidentified_pct": 92.6,
+  "hallucination_pct": 96.0,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.545,
+  "density_pred": 0.995,
+  "coverage_pct": 99.5,
+  "n_scored_msgs": 6441,
+  "tp": 259,
+  "fp": 6152,
+  "fn": 3249
+ },
+ "saved_at": "2026-09-27 05:36",
+ "runtime_seconds_total": 50092
+}

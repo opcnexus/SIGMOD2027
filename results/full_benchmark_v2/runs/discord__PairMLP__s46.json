@@ -1,0 +1,43 @@
+{
+ "dataset": "discord",
+ "algorithm": "PairMLP",
+ "seed": 46,
+ "metrics": {
+  "link": {
+   "P": 31.4,
+   "R": 77.9,
+   "F1": 44.8
+  },
+  "root": {
+   "P": 4.7,
+   "R": 100.0,
+   "F1": 9.0
+  },
+  "cats": {
+   "1-1": {
+    "P": 41.5,
+    "R": 82.4,
+    "F1": 55.2
+   },
+   "1-many": {
+    "P": 12.6,
+    "R": 58.2,
+    "F1": 20.7
+   }
+  },
+  "unidentified_pct": 22.1,
+  "hallucination_pct": 68.6,
+  "multi_parent_recall": null,
+  "fragmentation": 1.0,
+  "affinity": 1.0,
+  "density_gold": 0.392,
+  "density_pred": 0.971,
+  "coverage_pct": 97.1,
+  "n_scored_msgs": 2733,
+  "tp": 834,
+  "fp": 1821,
+  "fn": 237
+ },
+ "saved_at": "2026-09-26 19:42",
+ "runtime_seconds_total": 14479
+}
